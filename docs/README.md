@@ -1,0 +1,4 @@
+# Terms
+**Schedule Builder:** Schedule data from the schedule builder. Comes in one single file and is missing some data compared to the Course Schedule.
+**Course Schedule:** The official course schedule found [here](https:/generalssb-prod.ec.njit.edu/BannerExtensibility/customPage/page/stuRegCrseSched). The Course schedule is comprehensive and contains _all_ relevant data, but the data is split by term and department. This is useful as it allows for more focused and detailed requests.
+**Catalog:** The [NJIT Course Catalog](https://catalog.njit.edu/), which defines courses and majors, but contains no schedule data.
