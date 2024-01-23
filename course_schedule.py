@@ -67,12 +67,29 @@ SEMESTER_UPDATE_SCHEDULE = {
 class NJIT():
     @staticmethod
     def term_code(year:int, semester:SemesterType):
+        """Generates a term code that is compatible with the Course Schedule's internal API
+
+        Args:
+            year (int): The (calendar) year of the term
+            semester (SemesterType): The semester within the calendar year being defined
+
+        Returns:
+            _type_: str
+        """
         return str(year) + str(semester.value)
 
     _cterm: tuple[str | None, int] = (None, -1)
     
     @staticmethod
-    def current_term() -> str | None:        
+    def current_term() -> str | None:
+        """Returns the term code of the current ongoing term
+
+        Raises:
+            Exception: If the request fails (unlikely except in the case of server failure or ratelimit)
+
+        Returns:
+            str | None: The term code, or None if nothing was found
+        """
         prev_result, prev_time = NJIT._cterm
         if time.time() - prev_time < 86400:
             return prev_result
@@ -83,14 +100,15 @@ class NJIT():
 
         # Check if the request was successful
         if response.status_code == 200:
-            # Parse the content of the request with BeautifulSoup
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # Find the first <strong> tag
+            # The first <strong> tag should be the title, e.g. "Spring 2024 Academic Calendar"
+            # This is a point of failure if anything changes at the Academic Calendar site, watch closely
             first_strong_tag = soup.find('strong')
             
             if first_strong_tag:
                 split = first_strong_tag.text.split()
+                # This feels wrong
                 mapping = {
                     'spring': SemesterType.SPRING,
                     'fall': SemesterType.FALL,
@@ -113,11 +131,13 @@ class NJIT():
             raise Exception(f"Failed to get calendar page (Error {response.status_code})")
 
     @staticmethod
-    def refresh_term(term: str) -> bool:
+    def is_current_term(term: str) -> bool:        
         return term == NJIT.current_term()
 
+    # cond_func will only allow a cache lookup when true, so is_current_term needs to be inversed
+    # This way we only run this repeatedly for the most recent semester and nothing else
     @staticmethod
-    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Subjects", cond_func=lambda x: not NJIT.refresh_term(x))
+    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Subjects", cond_func=lambda x: not NJIT.is_current_term(x))
     def get_subjects(term:str):
         params = {
             'attr':None,
@@ -138,8 +158,10 @@ class NJIT():
         
         return response.json()
     
+    # cond_func will only allow a cache lookup when true, so is_current_term needs to be inversed
+    # This way we only run this repeatedly for the most recent semester and nothing else
     @staticmethod
-    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Sections", cond_func=lambda x, _: not NJIT.refresh_term(x))
+    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Sections", cond_func=lambda x, _: not NJIT.is_current_term(x))
     def get_sections(term:str, subject:str):
         params = {
             'attr':None,
@@ -161,7 +183,8 @@ class NJIT():
         return response.json()
     
 if __name__ == "__main__":
-    print(NJIT.get_subjects("202310"))
+    # Code that looks at all professors that have taught a specific course over time
+    # Not relevant to the rest of the file, should be deleted at some point
     import time
     year = 2023
     while year > 2010:
