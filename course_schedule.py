@@ -4,7 +4,7 @@ from enum import Enum
 import requests
 import urllib.parse
 from utils import cond_cache_to_mongodb
-import datetime
+from bs4 import BeautifulSoup
 
 class Base64:
     @staticmethod
@@ -68,14 +68,43 @@ class NJIT():
     def term_code(year:int, semester:SemesterType):
         return str(year) + str(semester.value)
 
+    # TODO: Cache result and only run if cache is older than a day
     @staticmethod
-    def refresh_term(term: str) -> bool:
-        year = term[:-2]
-        sem = SemesterType(int(term[-2:]))
-        ...
+    def current_term() -> str | None:
+        url = 'https://www.njit.edu/registrar/calendars'
+
+        response = requests.get(url)
+
+        # Check if the request was successful
+        if response.status_code == 200:
+            # Parse the content of the request with BeautifulSoup
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find the first <strong> tag
+            first_strong_tag = soup.find('strong')
+            
+            if first_strong_tag:
+                split = first_strong_tag.text.split()
+                mapping = {
+                    'spring': SemesterType.SPRING,
+                    'fall': SemesterType.FALL,
+                    'summer': SemesterType.SUMMER,
+                    'winter': SemesterType.WINTER
+                }
+                sem = mapping[split[0].lower()]
+                year = int(split[1])
+                return NJIT.term_code(year, sem)
+            else:
+                return None
+        else:
+            raise Exception(f"Failed to get calendar page (Error {response.status_code})")
 
     @staticmethod
-    #@cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Subjects")
+    def refresh_term(term: str) -> bool:
+        return term == NJIT.current_term()
+
+    @staticmethod
+    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Subjects", cond_func=lambda x: not NJIT.refresh_term(x))
     def get_subjects(term:str):
         params = {
             'attr':None,
@@ -97,6 +126,7 @@ class NJIT():
         return response.json()
     
     @staticmethod
+    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Sections", cond_func=lambda x, _: not NJIT.refresh_term(x))
     def get_sections(term:str, subject:str):
         params = {
             'attr':None,
@@ -117,13 +147,8 @@ class NJIT():
         
         return response.json()
     
-# term = NJIT.term_code(2024, SemesterType.FALL)
-# subjects = NJIT.get_subjects(term)
-# print(subjects)
-
-# sections = NJIT.get_sections(term, "CS")
-# print(sections)
 if __name__ == "__main__":
+    print(NJIT.get_subjects("202310"))
     import time
     year = 2023
     while year > 2010:
