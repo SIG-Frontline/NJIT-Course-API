@@ -5,6 +5,7 @@ import requests
 import urllib.parse
 from utils import cond_cache_to_mongodb
 from bs4 import BeautifulSoup
+import time
 
 class Base64:
     @staticmethod
@@ -68,9 +69,14 @@ class NJIT():
     def term_code(year:int, semester:SemesterType):
         return str(year) + str(semester.value)
 
-    # TODO: Cache result and only run if cache is older than a day
+    _cterm: tuple[str | None, int] = (None, -1)
+    
     @staticmethod
-    def current_term() -> str | None:
+    def current_term() -> str | None:        
+        prev_result, prev_time = NJIT._cterm
+        if time.time() - prev_time < 86400:
+            return prev_result
+        
         url = 'https://www.njit.edu/registrar/calendars'
 
         response = requests.get(url)
@@ -93,9 +99,16 @@ class NJIT():
                 }
                 sem = mapping[split[0].lower()]
                 year = int(split[1])
-                return NJIT.term_code(year, sem)
+                
+                code = NJIT.term_code(year, sem)
+                NJIT._cterm = (code, time.time())
+                return code
             else:
-                return None
+                NJIT._cterm[1] = -1 # Ensure that we retry
+                if prev_result != None:
+                    return prev_result
+                else:
+                    return None
         else:
             raise Exception(f"Failed to get calendar page (Error {response.status_code})")
 
