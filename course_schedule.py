@@ -49,21 +49,6 @@ class SemesterType(Enum):
     WINTER = 95
     SUMMER = 50
 
-SEMESTER_UPDATE_SCHEDULE = {
-    1: [SemesterType.SPRING, SemesterType.WINTER],
-    2: [SemesterType.SPRING],
-    3: [SemesterType.SPRING, SemesterType.SUMMER],
-    4: [SemesterType.SPRING, SemesterType.SUMMER, SemesterType.FALL],
-    5: [SemesterType.SPRING, SemesterType.SUMMER, SemesterType.FALL],
-    6: [SemesterType.FALL, SemesterType.SUMMER],
-    7: [SemesterType.FALL, SemesterType.SUMMER],
-    8: [SemesterType.FALL, SemesterType.SUMMER],
-    9: [SemesterType.FALL, SemesterType.SUMMER],
-    10: [SemesterType.FALL, SemesterType.WINTER],
-    11: [SemesterType.FALL, SemesterType.SPRING, SemesterType.WINTER],
-    12: [SemesterType.FALL, SemesterType.SPRING, SemesterType.WINTER]
-}
-
 class NJIT():
     @staticmethod
     def term_code(year:int, semester:SemesterType):
