@@ -61,6 +61,14 @@ def format_course_code(course_code) -> str:
     formatted_code = re.sub(r'(R\d{3}|[A-Za-z]+)(\d+[A-Za-z]?)', r'\1 \2', course_code)
     return formatted_code
 
+def split_course_code(course_code) -> str:
+    # Use regular expression to add a space between letters and digits
+    formatted_code = re.match(r'(R\d{3}|[A-Za-z]+)(\d+[A-Za-z]?)', course_code)
+    if formatted_code == None:
+        return course_code, ""
+    return formatted_code.group(1), formatted_code.group(2)
+
+
 def get_course_desc(course_code: str) -> str:
     if not ' ' in course_code:
         course_code = format_course_code(course_code)
