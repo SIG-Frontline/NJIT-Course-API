@@ -28,6 +28,7 @@ def cache_to_mongodb(db_name, collection_name):
             # Check if the result is already in the cache
             cache_item = collection.find_one({'_id': key})
             if cache_item is not None:
+                print("___ Cache Hit ___")
                 if 'result' in cache_item:
                     return cache_item['result']
                 else:

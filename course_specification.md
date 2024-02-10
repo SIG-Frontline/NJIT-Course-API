@@ -60,4 +60,14 @@ OR
   "placement":true
 }
 ```
-The `placement` field is only present when defining placement testing; true to indicate that a placement test validates this requirement. Otherwise, it should not be included.
+The `placement` field is only present when defining placement testing; true to indicate that a placement test validates this requirement. Otherwise, it should not be included. Department or Advisor approval should not be represented by this, or at all.
+OR
+```json
+{
+  "major":"Computer Science, Digital Design, etc."
+}
+```
+The `major` field is only present for defining restrictions on major.
+
+---
+This format does not account for courses being equivalent, and thus that should not be represented.

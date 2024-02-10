@@ -58,7 +58,7 @@ def llm(prompt: str, json_mode: bool = True, model: str = "gpt-4-1106-preview") 
 
 def format_course_code(course_code) -> str:
     # Use regular expression to add a space between letters and digits
-    formatted_code = re.sub(r'(R\d{3}|[A-Za-z]+)(\d+)', r'\1 \2', course_code)
+    formatted_code = re.sub(r'(R\d{3}|[A-Za-z]+)(\d+[A-Za-z]?)', r'\1 \2', course_code)
     return formatted_code
 
 def get_course_desc(course_code: str) -> str:
@@ -76,8 +76,9 @@ def get_course_desc(course_code: str) -> str:
     desc = xml_to_raw_text(response.text)
     return desc
 
-def get_course_reqs(course_code: str):
-    desc = get_course_desc(course_code)
+def get_course_reqs(course_code: str, desc: str = None):
+    if desc == None:
+        desc = get_course_desc(course_code)
     
     spec = ""
     with open("course_specification.md", 'r') as reader:

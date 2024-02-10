@@ -171,7 +171,7 @@ if __name__ == "__main__":
     # Code that looks at all professors that have taught a specific course over time
     # Not relevant to the rest of the file, should be deleted at some point
     import time
-    year = 2023
+    year = 2024
     while year > 2010:
         for sem in [SemesterType.SPRING, SemesterType.SUMMER, SemesterType.FALL, SemesterType.WINTER]:
             term = NJIT.term_code(year, sem)
@@ -180,7 +180,7 @@ if __name__ == "__main__":
             profs = set()
             
             for sec in sections:
-                if sec['COURSE'] == 'CS435':
+                if sec['COURSE'] == 'CS482':
                     profs.add(sec['INSTRUCTOR'])
             
             print(f"[{year}, {sem}]: {list(profs)}")
