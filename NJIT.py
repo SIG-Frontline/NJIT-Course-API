@@ -6,6 +6,8 @@ import urllib.parse
 from utils import cond_cache_to_mongodb
 from bs4 import BeautifulSoup
 import time
+import xml.etree.ElementTree as ET
+import re
 
 class Base64:
     @staticmethod
@@ -42,6 +44,34 @@ def decode_params(params:dict[str, str]):
             tval = Base64.decode(value[4:])
         dec_params[tkey] = tval
     return dec_params
+
+def _xml_to_raw_text(xml_string) -> str:
+    try:
+        # Parse the XML string
+        root = ET.fromstring(xml_string)
+
+        # Function to recursively extract text from each element
+        def recurse_extract_text(element):
+            text = element.text or ""
+            xml_text = None
+            try:
+                xml_text = ET.fromstring(text)
+            except:
+                pass
+            finally:
+                if xml_text != None:
+                    text = recurse_extract_text(xml_text)
+            for child in element:
+                text += recurse_extract_text(child)
+            text += element.tail or ""
+            return text
+
+        # Extract text starting from the root
+        raw_text = recurse_extract_text(root)
+
+        return raw_text.strip()
+    except ET.ParseError as e:
+        return f"Error parsing XML: {e}"
 
 class SemesterType(Enum):
     FALL = 90
@@ -167,6 +197,34 @@ class NJIT():
         
         return response.json()
     
+    @staticmethod
+    def format_course_code(course_code) -> str:
+        formatted_code = re.sub(r'(R\d{3}|[A-Za-z]+)(\d+[A-Za-z]?)', r'\1 \2', course_code)
+        return formatted_code
+
+    @staticmethod
+    def split_course_code(course_code) -> str:
+        formatted_code = re.match(r'(R\d{3}|[A-Za-z]+)(\d+[A-Za-z]?)', course_code)
+        if formatted_code == None:
+            return course_code, ""
+        return formatted_code.group(1), formatted_code.group(2)
+    
+    @staticmethod
+    def get_course_desc(course_code: str) -> str:
+        if not ' ' in course_code:
+            course_code = NJIT.format_course_code(course_code)
+        
+        cs = course_code.split()
+        url = f"https://catalog.njit.edu/ribbit/index.cgi?page=getcourse.rjs&code={cs[0]}%20{cs[1]}"
+        
+        response = requests.get(url=url)
+        
+        if response.status_code != 200:
+            raise Exception(f"Failed to get description of course {course_code}")
+        
+        desc = _xml_to_raw_text(response.text)
+        return desc
+        
 if __name__ == "__main__":
     # Code that looks at all professors that have taught a specific course over time
     # Not relevant to the rest of the file, should be deleted at some point

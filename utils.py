@@ -1,18 +1,14 @@
 from pymongo import MongoClient
 import openai
-
 import functools
 import hashlib
-
 from dotenv import load_dotenv
 import os
 import json
 
-
 load_dotenv()
 
 mongo_client = MongoClient(os.environ.get("MONGO_CONNECTION_STRING"))
-openai_client = openai.OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
 def cache_to_mongodb(db_name, collection_name):
     global mongo_client

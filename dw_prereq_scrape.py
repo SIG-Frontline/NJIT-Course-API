@@ -1,6 +1,5 @@
 import requests
-from course_schedule import NJIT, SemesterType
-from prereq_parser import get_course_desc, get_course_reqs, split_course_code
+from NJIT import NJIT, SemesterType
 from utils import mongo_client
 import time
 import datetime
@@ -32,7 +31,7 @@ def get_major(major, catalogYear):
         "isKeepCurriculum":False,
         "school":"U",
         "degree":"BS",
-        "catalogYear":"2022",
+        "catalogYear":catalogYear,
         "goals":[{"code":"MAJOR","value":str(major),"catalogYear":str(catalogYear)}],
         "classes":[]
     }
@@ -65,7 +64,7 @@ if __name__ == "__main__":
                         continue
                     else:      
                         c1 = course.replace(' ', '')
-                        c2 = split_course_code(c1)
+                        c2 = NJIT.split_course_code(c1)
                         
                         cname = " ".join(c2)
                         
