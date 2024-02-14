@@ -1,4 +1,4 @@
-from NJIT import NJIT
+from .NJIT import NJIT
 import time
 from typing import Callable
 

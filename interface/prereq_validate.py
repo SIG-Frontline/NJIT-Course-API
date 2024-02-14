@@ -1,8 +1,9 @@
-from utils import mongo_client
 import networkx as nx
 import matplotlib.pyplot as plt
 import re
 from pyvis.network import Network
+
+from .utils import mongo_client
 
 db = mongo_client["NJIT_Course_API"]
 course_collection = db["Courses"]

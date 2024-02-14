@@ -1,10 +1,10 @@
 import requests
-from NJIT import NJIT, SemesterType
-from utils import mongo_client
 import time
 import datetime
 import json
 
+from .NJIT import NJIT, SemesterType
+from .utils import mongo_client
 
 dw_majors = ['APPH', 'ARCH', 'BIOC', 'BNFO', 'BIOL', 'BMED', 'BINF', 'BIOP', 'BIS', 'BUS', 'CHE', 'CHM', 'CE', 'COMM', 'CSCI', 'COE', 'CS', 'CBUS', 'CIM', 'CPSY', 'DSCO', 'DSSO', 'EE', 'ESC', 'EVSC', 'FTEC', 'FRSC', 'GEN', 'HCI', 'ID', 'IE', 'IS', 'IT', 'MFEN', 'MTEN', 'MATH', 'ME', 'STS', 'UDCC', 'UDEN', 'UDSL', 'WIS']
 

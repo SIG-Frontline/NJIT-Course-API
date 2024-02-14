@@ -1,5 +1,4 @@
 from pymongo import MongoClient
-import openai
 import functools
 import hashlib
 from dotenv import load_dotenv
