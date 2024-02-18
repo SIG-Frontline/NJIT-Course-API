@@ -1,6 +1,7 @@
 from interface.NJIT import NJIT, SemesterType
 from interface.utils import mongo_client
 import time
+from datetime import datetime
 
 year = 2024
 
@@ -27,8 +28,10 @@ while year > 2010:
                             crns[section['CRN']]['DAYS'][d] = True
                         if section['TIMES'] != None:
                             for d in section['DAYS']:
+                                if not section['DAYS'][d]:
+                                    continue
                                 times = section['TIMES'].split(' - ')
-                                times = [time.strptime(x, '%I:%M %p') for x in times]
+                                times = [datetime.strptime(x, '%I:%M %p') for x in times]
                                 crns[section['CRN']]['TIMES'][d].append(times)
                     continue
 
@@ -40,8 +43,6 @@ while year > 2010:
                     section['COURSE_LEVEL'] = int(course_number[0])
                 else:
                     section['COURSE_LEVEL'] = None
-                
-                
                 
                 # Flags
                 section['IS_HONORS'] = section['TITLE'].lower().endswith('honors')
@@ -70,11 +71,18 @@ while year > 2010:
                 
                     if section['TIMES'] != None:
                         time_obj = {}
-                        for d in section['DAYS']:
-                            times = section['TIMES'].split(' - ')
-                            times = [time.strptime(x, '%I:%M %p') for x in times]
-                            time_obj[d] = [times]
-                        section['TIMES'] = time_obj                                    
+                        times = section['TIMES'].split(' - ')
+                        try:
+                            times = [datetime.strptime(x, '%I:%M %p') for x in times]
+                        except ValueError:
+                            # Time is probably 'TBA' or something, leave it null
+                            section['TIMES'] = None
+                        else:
+                            for d in section['DAYS']:
+                                if not section['DAYS'][d]:
+                                    continue                            
+                                time_obj[d] = [times]
+                            section['TIMES'] = time_obj                                    
                 
                 try:         
                     comment_list = section['COMMENTS'].split('<br />')
