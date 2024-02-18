@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import re
 from pyvis.network import Network
 
-from .utils import mongo_client
+from utils import mongo_client
 
 db = mongo_client["NJIT_Course_API"]
 course_collection = db["Courses"]
@@ -249,8 +249,9 @@ connections = [['From', 'To', 'Direction', 'Type', 'Tags']]
 
 for course in course_collection.find({}):
     e = reqs_to_str(course)
-    node = Node(course['_id'], dependency=e)
-    tree.add_node(node)
+    if course['_id'] == 'BME 430':
+        node = Node(course['_id'], dependency=e)
+        tree.add_node(node)
 
 #tree.visualize_graph_nohier()
 

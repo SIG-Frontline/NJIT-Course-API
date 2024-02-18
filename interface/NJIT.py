@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import time
 import xml.etree.ElementTree as ET
 import re
+from functools import lru_cache
 
 from .utils import cond_cache_to_mongodb
 
@@ -97,6 +98,7 @@ class NJIT():
     _cterm: tuple[str | None, int] = (None, -1)
     
     @staticmethod
+    @lru_cache(maxsize=1)
     def current_term() -> str | None:
         """Returns the term code of the current ongoing term
 
@@ -153,7 +155,7 @@ class NJIT():
     # cond_func will only allow a cache lookup when true, so is_current_term needs to be inversed
     # This way we only run this repeatedly for the most recent semester and nothing else
     @staticmethod
-    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Subjects", cond_func=lambda x: not NJIT.is_current_term(x))
+    @cond_cache_to_mongodb(db_name="Schedule_Builder", collection_name="Subjects", cond_func=lambda x: not NJIT.is_current_term(x))
     def get_subjects(term:str):
         params = {
             'attr':None,
@@ -172,12 +174,12 @@ class NJIT():
         if response.status_code != 200:
             raise Exception(f"Request for NJIT Course Subjects Failed (Error {response.status_code})")
         
-        return response.json()
+        return [x['SUBJECT'] for x in response.json()]
     
     # cond_func will only allow a cache lookup when true, so is_current_term needs to be inversed
     # This way we only run this repeatedly for the most recent semester and nothing else
     @staticmethod
-    @cond_cache_to_mongodb(db_name="NJIT_Course_API", collection_name="CS_Sections", cond_func=lambda x, _: not NJIT.is_current_term(x))
+    @cond_cache_to_mongodb(db_name="Schedule_Builder", collection_name="Bulk_Sections", cond_func=lambda x, _: not NJIT.is_current_term(x))
     def get_sections(term:str, subject:str):
         params = {
             'attr':None,
