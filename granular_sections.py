@@ -1,7 +1,8 @@
 from interface.NJIT import NJIT, SemesterType
 from interface.utils import mongo_client
+import time
 
-year = 2021
+year = 2024
 
 
 db = mongo_client['Schedule_Builder']
@@ -26,7 +27,9 @@ while year > 2010:
                             crns[section['CRN']]['DAYS'][d] = True
                         if section['TIMES'] != None:
                             for d in section['DAYS']:
-                                crns[section['CRN']]['TIMES'][d].append(section['TIMES'])
+                                times = section['TIMES'].split(' - ')
+                                times = [time.strptime(x, '%I:%M %p') for x in times]
+                                crns[section['CRN']]['TIMES'][d].append(times)
                     continue
 
                 section['COURSE'] = NJIT.format_course_code(section['COURSE'])
@@ -38,7 +41,13 @@ while year > 2010:
                 else:
                     section['COURSE_LEVEL'] = None
                 
-                if not 'online' in (section.get('INSTRUCTION_METHOD') or 'online').lower() and len((section.get('LOCATION') or '').strip()) > 0:
+                
+                
+                # Flags
+                section['IS_HONORS'] = section['TITLE'].lower().endswith('honors')
+                section['IS_ASYNC'] = 'online' in (section.get('INSTRUCTION_METHOD') or '').lower()
+                
+                if not section['IS_ASYNC'] and len((section.get('LOCATION') or '').strip()) > 0:
                     section['BUILDING'] = " ".join(section['LOCATION'].split(' ')[:-1])
                     section['FLOOR'] = section['LOCATION'].split(' ')[-1][0]
                 else:
@@ -52,7 +61,8 @@ while year > 2010:
                         'W': False,
                         'R': False,
                         'F': False,
-                        'S': False
+                        'S': False,
+                        'U': False
                     }
                     for d in section['DAYS']:
                         day_obj[d] = True
@@ -61,19 +71,30 @@ while year > 2010:
                     if section['TIMES'] != None:
                         time_obj = {}
                         for d in section['DAYS']:
-                            time_obj[d] = [section['TIMES']]
-                        section['TIMES'] = time_obj
-                    
-                # Flags
-                section['IS_HONORS'] = section['SECTION'][0] == 'H'
-                section['IS_ONLINE'] = section['SECTION'][0] in ['4', '8']
-                section['IS_OFF_HOURS'] = section['SECTION'][0] == '1'
+                            times = section['TIMES'].split(' - ')
+                            times = [time.strptime(x, '%I:%M %p') for x in times]
+                            time_obj[d] = [times]
+                        section['TIMES'] = time_obj                                    
                 
+                try:         
+                    comment_list = section['COMMENTS'].split('<br />')
+                    comment_list = [x.lower() for x in comment_list]
+                except:
+                    comment_list = []
+                            
                 # Summer Periods
-                if sem == SemesterType.SUMMER and len(section['SECTION']) > 2:
-                    section['SUMMER_PERIOD'] = section['SECTION'][1] if section['SECTION'][1] in ['1', '2', '4'] else None
+                if any(c.startswith('full summer') for c in comment_list):
+                    section['SUMMER_PERIOD'] = 4
+                elif any(c.startswith('first summer') for c in comment_list):
+                    section['SUMMER_PERIOD'] = 1
+                elif any(c.startswith('second summer') for c in comment_list):
+                    section['SUMMER_PERIOD'] = 2
                 else:
-                    section['SUMMER_PERIOD'] = None                
+                    section['SUMMER_PERIOD'] = None
+                # if sem == SemesterType.SUMMER and len(section['SECTION']) > 2:
+                #     section['SUMMER_PERIOD'] = section['SECTION'][1] if section['SECTION'][1] in ['1', '2', '4'] else None
+                # else:
+                #     section['SUMMER_PERIOD'] = None                
                 
                 section['_id'] = f"{term}-{section['CRN']}"
                 crns[section['CRN']] = section
