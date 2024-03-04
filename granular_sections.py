@@ -13,6 +13,7 @@ while year > 2010:
     for sem in [SemesterType.SPRING, SemesterType.SUMMER, SemesterType.FALL, SemesterType.WINTER]:
         term = NJIT.term_code(year, sem)
         for subject in NJIT.get_subjects(term):
+            time.sleep(0.5)
             sections = NJIT.get_sections(term, subject)
             
             crns = {}
@@ -22,38 +23,9 @@ while year > 2010:
                 
                 del section['ROW_NUMBER']
                 
-                if section['CRN'] in crns:
-                    if section['DAYS'] != None:
-                        for d in section['DAYS']:
-                            crns[section['CRN']]['DAYS'][d] = True
-                        if section['TIMES'] != None:
-                            for d in section['DAYS']:
-                                if not crns[section['CRN']]['DAYS'][d]:
-                                    continue
-                                times = section['TIMES'].split(' - ')
-                                times = [datetime.strptime(x, '%I:%M %p') for x in times]
-                                crns[section['CRN']]['TIMES'][d].append(times)
-                    continue
-
-                section['COURSE'] = NJIT.format_course_code(section['COURSE'])
-                course_number = section['COURSE'].split(' ')[-1]
-                section['SUBJECT'] = section['COURSE'].split(' ')[0]
-                
-                if course_number[0].isdigit():
-                    section['COURSE_LEVEL'] = int(course_number[0])
-                else:
-                    section['COURSE_LEVEL'] = None
-                
                 # Flags
                 section['IS_HONORS'] = section['TITLE'].lower().endswith('honors')
                 section['IS_ASYNC'] = 'online' in (section.get('INSTRUCTION_METHOD') or '').lower()
-                
-                if not section['IS_ASYNC'] and len((section.get('LOCATION') or '').strip()) > 0:
-                    section['BUILDING'] = " ".join(section['LOCATION'].split(' ')[:-1])
-                    section['FLOOR'] = section['LOCATION'].split(' ')[-1][0]
-                else:
-                    section['BUILDING'] = None
-                    section['FLOOR'] = None
                 
                 if section['DAYS'] != None:
                     day_obj = {
@@ -68,21 +40,58 @@ while year > 2010:
                     for d in section['DAYS']:
                         day_obj[d] = True
                     section['DAYS'] = day_obj
-                
+                    
                     if section['TIMES'] != None:
-                        time_obj = {}
                         times = section['TIMES'].split(' - ')
                         try:
                             times = [datetime.strptime(x, '%I:%M %p') for x in times]
                         except ValueError:
-                            # Time is probably 'TBA' or something, leave it null
-                            section['TIMES'] = None
+                            # Time is probably 'TBA' or something, leave it empty
+                            section['TIMES'] = []
                         else:
-                            for d in section['DAYS']:
-                                if not section['DAYS'][d]:
-                                    continue                            
-                                time_obj[d] = [times]
-                            section['TIMES'] = time_obj                                    
+                            section['TIMES'] = []
+                            day_str = ''
+                            for k, v in day_obj.items():
+                                if v:                                    
+                                    time_obj = {
+                                        'day': k,
+                                        'start': times[0],
+                                        'end': times[1]
+                                    }               
+                                    if not section['IS_ASYNC'] and len((section.get('LOCATION') or '').strip()) > 0:                                
+                                        s = section['LOCATION'].split(' ')
+                                        time_obj['building'] = s[0]
+                                        time_obj['room'] = ' '.join(s[1:])
+                                    else:
+                                        time_obj['building'] = None
+                                        time_obj['room'] = None
+                                    section['TIMES'].append(time_obj)
+                    else:
+                        section['TIMES'] = []                  
+                else:
+                    section['DAYS'] = None
+                    section['TIMES'] = []
+                del section['LOCATION']
+                
+                if section['CRN'] in crns:
+                    if section['DAYS'] != None:
+                        for d in section['DAYS']:
+                            crns[section['CRN']]['DAYS'][d] = True
+                        
+                        crns[section['CRN']]['TIMES'].extend(section['TIMES'])
+                    continue
+
+                section['COURSE'] = NJIT.format_course_code(section['COURSE'])
+                course_number = section['COURSE'].split(' ')[-1]
+                section['SUBJECT'] = section['COURSE'].split(' ')[0]
+                
+                if course_number[0].isdigit():
+                    section['COURSE_LEVEL'] = int(course_number[0])
+                else:
+                    section['COURSE_LEVEL'] = None
+                
+                section['MAX'] = int(section['MAX'])
+                section['NOW'] = int(section['NOW'])              
                 
                 try:         
                     comment_list = section['COMMENTS'].split('<br />')
