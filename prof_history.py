@@ -9,9 +9,8 @@ while year > 2010:
         sections = NJIT.get_sections(term, 'CS')
         profs = set()
         for s in sections:
-            if s['COURSE'] == 'CS350':
-                print(s)
-                #profs.add(s['INSTRUCTOR'])
+            if s['COURSE'] == 'CS114':
+                profs.add(s['INSTRUCTOR'])
         print(f"[{year}, {sem}]: {list(profs)}")
     year -= 1
     exit()

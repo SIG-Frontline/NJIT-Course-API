@@ -252,49 +252,49 @@ for course in course_collection.find({}):
     node = Node(course['_id'], dependency=e)
     tree.add_node(node)
 
-for target in ['IT 220', 'IT 230', 'IT 240', 'IT 310', 'IT 330', 'IT 331', 'IT 332', 'IT 400', 'IT 430', 'CS 332', 'CS 357', 'CPT 335', 'CPT 435']:
-    try:
-        path = target, nx.shortest_path(tree.graph, 'MATH 111', target)
-        print("Path from", "MATH 111", "to", target, ":", path)
-    except nx.NetworkXNoPath:
-        print(f"No path found between MATH 111 and {target}")
-    except nx.NodeNotFound:
-        print(f"{target} not found. Likely has no prerequisites or hasn't been offered since 2011.")
+# for target in ['IT 220', 'IT 230', 'IT 240', 'IT 310', 'IT 330', 'IT 331', 'IT 332', 'IT 400', 'IT 430', 'CS 332', 'CS 357', 'CPT 335', 'CPT 435']:
+#     try:
+#         path = target, nx.shortest_path(tree.graph, 'MATH 111', target)
+#         print("Path from", "MATH 111", "to", target, ":", path)
+#     except nx.NetworkXNoPath:
+#         print(f"No path found between MATH 111 and {target}")
+#     except nx.NodeNotFound:
+#         print(f"{target} not found. Likely has no prerequisites or hasn't been offered since 2011.")
     
 
 #tree.visualize_graph_nohier()
 
-# import csv
-# for node in tree.graph.nodes:
-#     tags = ""
-#     type = ""
-#     if node.startswith("OR_"):
-#         # Make OR nodes small and a different color
-#         tags = f"operator | OR"
-#         type = "operator"
-#     elif node.startswith("AND_"):
-#         # Make OR nodes small and a different color
-#         tags = f"operator | AND"
-#         type = "operator"
-#     else:
-#         tags = f"course | {node.split()[0]}"
-#         type = "course"
-#     elements.append([node, type, tags])
+import csv
+for node in tree.graph.nodes:
+    tags = ""
+    type = ""
+    if node.startswith("OR_"):
+        # Make OR nodes small and a different color
+        tags = f"operator | OR"
+        type = "operator"
+    elif node.startswith("AND_"):
+        # Make OR nodes small and a different color
+        tags = f"operator | AND"
+        type = "operator"
+    else:
+        tags = f"course | {node.split()[0]}"
+        type = "course"
+    elements.append([node, type, tags])
 
-# for c in tree.graph.edges:
-#     type = ""
-#     tags = ""
-#     if c[1].startswith("OR_"):
-#         type = "OR_dep"
-#     else:
-#         type = "AND_dep"
+for c in tree.graph.edges:
+    type = ""
+    tags = ""
+    if c[1].startswith("OR_"):
+        type = "OR_dep"
+    else:
+        type = "AND_dep"
     
-#     connections.append([c[0], c[1], 'directed', type, tags])
+    connections.append([c[0], c[1], 'directed', type, tags])
 
-# with open('elements.csv','w+') as myfile:
-#   wr = csv.writer(myfile) #, quoting=csv.QUOTE_ALL)
-#   wr.writerows(elements)
+with open('elements.csv','w+') as myfile:
+  wr = csv.writer(myfile) #, quoting=csv.QUOTE_ALL)
+  wr.writerows(elements)
   
-# with open('connections.csv','w+') as myfile:
-#   wr = csv.writer(myfile) #, quoting=csv.QUOTE_ALL)
-#   wr.writerows(connections)
+with open('connections.csv','w+') as myfile:
+  wr = csv.writer(myfile) #, quoting=csv.QUOTE_ALL)
+  wr.writerows(connections)

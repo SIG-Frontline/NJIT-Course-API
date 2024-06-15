@@ -206,7 +206,7 @@ class NJIT():
         return formatted_code
 
     @staticmethod
-    def split_course_code(course_code) -> str:
+    def split_course_code(course_code) -> tuple[str, str]:
         formatted_code = re.match(r'(R\d{3}|[A-Za-z]+)(\d+[A-Za-z]?)', course_code)
         if formatted_code == None:
             return course_code, ""
