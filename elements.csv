@@ -1,0 +1,2082 @@
+Label,Type,Tags
+MATH 111,course,course | MATH
+OR_MATH 111_MATH 135_MTH 121_MTH 127_R640 135,operator,operator | OR
+MATH 135,course,course | MATH
+MTH 121,course,course | MTH
+MTH 127,course,course | MTH
+R640 135,course,course | R640
+"AND_('|', 'MATH 111', 'MATH 135', 'MTH 121', 'MTH 127', 'R640 135')_FIN 310_FIN 320",operator,operator | AND
+FIN 310,course,course | FIN
+FIN 320,course,course | FIN
+FIN 410,course,course | FIN
+BIOL 201,course,course | BIOL
+OR_BIOL 201_R120 201,operator,operator | OR
+R120 201,course,course | R120
+"AND_('|', 'BIOL 201', 'R120 201')_('|', 'BIOL 202', 'R120 202')_('|', 'BIOL 205', 'R120 205')_('|', 'BIOL 206', 'R120 206')",operator,operator | AND
+BIOL 202,course,course | BIOL
+OR_BIOL 202_R120 202,operator,operator | OR
+R120 202,course,course | R120
+BIOL 205,course,course | BIOL
+OR_BIOL 205_R120 205,operator,operator | OR
+R120 205,course,course | R120
+BIOL 206,course,course | BIOL
+OR_BIOL 206_R120 206,operator,operator | OR
+R120 206,course,course | R120
+BIOL 382,course,course | BIOL
+CHE 791,course,course | CHE
+CHE 792,course,course | CHE
+PHYS 102A,course,course | PHYS
+PHYS 102,course,course | PHYS
+ME 616,course,course | ME
+ME 636,course,course | ME
+PTC 601,course,course | PTC
+PTC 604,course,course | PTC
+CS 288,course,course | CS
+AND_CS 288_CS 332_CS 350,operator,operator | AND
+CS 332,course,course | CS
+CS 350,course,course | CS
+CS 433,course,course | CS
+BIOL 432,course,course | BIOL
+OR_BIOL 432_MATH 430,operator,operator | OR
+MATH 430,course,course | MATH
+BIOL 436,course,course | BIOL
+CHEM 221,course,course | CHEM
+"AND_('|', 'CHEM 221')_('|', 'CHEM 235')_MATH 225",operator,operator | AND
+CHEM 235,course,course | CHEM
+MATH 225,course,course | MATH
+CHEM 235A,course,course | CHEM
+CS 207,course,course | CS
+OR_CS 207_YWCC 207,operator,operator | OR
+YWCC 207,course,course | YWCC
+YWCC 307,course,course | YWCC
+MATH 244,course,course | MATH
+OR_MATH 244_MATH 333_MTH 141,operator,operator | OR
+MATH 333,course,course | MATH
+MTH 141,course,course | MTH
+MATH 341,course,course | MATH
+MATH 222,course,course | MATH
+OR_MATH 222_MATH 328_MATH 335_MTH 222,operator,operator | OR
+MATH 328,course,course | MATH
+MATH 335,course,course | MATH
+MTH 222,course,course | MTH
+"AND_('|', 'MATH 222', 'MATH 328', 'MATH 335', 'MTH 222')_('|', 'PHY 203', 'PHYS 231H', 'PHYS 234')",operator,operator | AND
+PHY 203,course,course | PHY
+OR_PHY 203_PHYS 231H_PHYS 234,operator,operator | OR
+PHYS 231H,course,course | PHYS
+PHYS 234,course,course | PHYS
+PHYS 432,course,course | PHYS
+ENGL 101,course,course | ENGL
+OR_ENGL 101_HUM 101,operator,operator | OR
+HUM 101,course,course | HUM
+"AND_('|', 'ENGL 101', 'HUM 101')_('|', 'ENGL 102', 'HUM 102')",operator,operator | AND
+ENGL 102,course,course | ENGL
+OR_ENGL 102_HUM 102,operator,operator | OR
+HUM 102,course,course | HUM
+THTR 216,course,course | THTR
+CS 101,course,course | CS
+OR_CS 101_CS 113,operator,operator | OR
+CS 113,course,course | CS
+"AND_('|', 'CS 101', 'CS 113')_('|', 'EG 101', 'FED 101')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+EG 101,course,course | EG
+OR_EG 101_FED 101,operator,operator | OR
+FED 101,course,course | FED
+OR_MATH 222_MTH 222,operator,operator | OR
+ME 430,course,course | ME
+CE 332,course,course | CE
+AND_CE 332_CE 341,operator,operator | AND
+CE 341,course,course | CE
+CE 461,course,course | CE
+INTD 799,course,course | INTD
+ECE 701C,course,course | ECE
+CE 610,course,course | CE
+CE 711,course,course | CE
+MNE 601,course,course | MNE
+MNE 654,course,course | MNE
+ME 403,course,course | ME
+AND_ME 403_ME 407,operator,operator | AND
+ME 407,course,course | ME
+ME 408,course,course | ME
+CS 100,course,course | CS
+OR_CS 100_CS 103,operator,operator | OR
+CS 103,course,course | CS
+"AND_('|', 'CS 100', 'CS 103')_MIS 245",operator,operator | AND
+MIS 245,course,course | MIS
+MIS 385,course,course | MIS
+EVSC 335,course,course | EVSC
+GER200,course,course | GER200
+HIST 391,course,course | HIST
+CHE 611,course,course | CHE
+CHE 782,course,course | CHE
+ARCH 495,course,course | ARCH
+ARCH 561,course,course | ARCH
+MATH 331,course,course | MATH
+"AND_('|', 'MATH 331')_('|', 'MATH 340')",operator,operator | AND
+MATH 340,course,course | MATH
+MATH 440,course,course | MATH
+FIN 600,course,course | FIN
+FIN 650,course,course | FIN
+COM 325,course,course | COM
+HIST 345,course,course | HIST
+MET 237,course,course | MET
+AND_MET 237_MNET 300_MNET 303,operator,operator | AND
+MNET 300,course,course | MNET
+MNET 303,course,course | MNET
+MNET 422,course,course | MNET
+CHEM 791,course,course | CHEM
+CHEM 790A,course,course | CHEM
+CS 280,course,course | CS
+PHB 701B,course,course | PHB
+CHE 360,course,course | CHE
+CHE 460,course,course | CHE
+ME 312,course,course | ME
+AND_ME 312_ME 343,operator,operator | AND
+ME 343,course,course | ME
+ME 405,course,course | ME
+BME 670,course,course | BME
+BME 676,course,course | BME
+IS 601,course,course | IS
+OR_IS 601_NJGD,operator,operator | OR
+NJGD,course,course | NJGD
+IS 663,course,course | IS
+HIST 386,course,course | HIST
+OR_FED 101_MET 105,operator,operator | OR
+MET 105,course,course | MET
+"AND_('|', 'FED 101', 'MET 105')_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_('|', 'MECH 236', 'MET 236')",operator,operator | AND
+MATH 112,course,course | MATH
+OR_MATH 112_MATH 238_MTH 122_MTH 213_R640 136,operator,operator | OR
+MATH 238,course,course | MATH
+MTH 122,course,course | MTH
+MTH 213,course,course | MTH
+R640 136,course,course | R640
+MECH 236,course,course | MECH
+OR_MECH 236_MET 236,operator,operator | OR
+MET 236,course,course | MET
+MET 314,course,course | MET
+AND_PHYS 102_PHYS 102A,operator,operator | AND
+"OR_('&', 'PHYS 102', 'PHYS 102A')_('&', 'PHYS 111', 'PHYS 111A')",operator,operator | OR
+PHYS 111,course,course | PHYS
+AND_PHYS 111_PHYS 111A,operator,operator | AND
+PHYS 111A,course,course | PHYS
+"AND_('|', ('&', 'PHYS 102', 'PHYS 102A'), ('&', 'PHYS 111', 'PHYS 111A'))_PHYS 103",operator,operator | AND
+PHYS 103,course,course | PHYS
+PHYS 103A,course,course | PHYS
+OR_MATH 111_MTH 121_R640 135,operator,operator | OR
+"AND_('|', 'MATH 111', 'MTH 121', 'R640 135')_CHEM 126",operator,operator | AND
+CHEM 126,course,course | CHEM
+ENE 362,course,course | ENE
+STS 382,course,course | STS
+MATH 545,course,course | MATH
+OR_MATH 545_MATH 645,operator,operator | OR
+MATH 645,course,course | MATH
+"AND_('|', 'MATH 545', 'MATH 645')_MATH 613_MATH 631",operator,operator | AND
+MATH 613,course,course | MATH
+MATH 631,course,course | MATH
+MATH 689,course,course | MATH
+BME 701B,course,course | BME
+MTEN 201,course,course | MTEN
+MTEN 202,course,course | MTEN
+BIOL 350,course,course | BIOL
+"AND_('|', 'INTD 799')_('|', 'PHEN 791')",operator,operator | AND
+PHEN 791,course,course | PHEN
+PHEN 701C,course,course | PHEN
+AD 161,course,course | AD
+AD 162,course,course | AD
+EPS 202,course,course | EPS
+TRAN 700B,course,course | TRAN
+ECET 344,course,course | ECET
+ECET 444,course,course | ECET
+THTR 344,course,course | THTR
+AS 221,course,course | AS
+AS 222,course,course | AS
+PHB 701C,course,course | PHB
+ECE 660,course,course | ECE
+ECE 661,course,course | ECE
+ME 701B,course,course | ME
+MATH 665,course,course | MATH
+MATH 659,course,course | MATH
+ACCT 325,course,course | ACCT
+ACCT 490,course,course | ACCT
+AD 150,course,course | AD
+OR_AD 150_ARCH 396,operator,operator | OR
+ARCH 396,course,course | ARCH
+AD 340,course,course | AD
+BIOL 340,course,course | BIOL
+OR_BIOL 340_R120 340,operator,operator | OR
+R120 340,course,course | R120
+BIOL 423,course,course | BIOL
+CE 210,course,course | CE
+CE 465,course,course | CE
+STS 363,course,course | STS
+STS 364,course,course | STS
+AD 201,course,course | AD
+OR_AD 201_ARCH 295,operator,operator | OR
+ARCH 295,course,course | ARCH
+ID 340,course,course | ID
+OR_CS 100_CS 101_CS 113_CS 115,operator,operator | OR
+CS 115,course,course | CS
+"AND_('|', 'CS 100', 'CS 101', 'CS 113', 'CS 115')_('|', 'MATH 337', 'MTH 239', 'R640 337')",operator,operator | AND
+MATH 337,course,course | MATH
+OR_MATH 337_MTH 239_R640 337,operator,operator | OR
+MTH 239,course,course | MTH
+R640 337,course,course | R640
+MATH 391,course,course | MATH
+ESC 491,course,course | ESC
+OR_ESC 491_GEN 491,operator,operator | OR
+GEN 491,course,course | GEN
+GEN 492,course,course | GEN
+MTSE 791,course,course | MTSE
+OR_MTSE 791_PHYS 791,operator,operator | OR
+PHYS 791,course,course | PHYS
+MTSE 792B,course,course | MTSE
+"AND_('|', 'ENGL 102', 'HUM 102')_GER200",operator,operator | AND
+COM 355,course,course | COM
+MGMT 190,course,course | MGMT
+OR_MGMT 190_MGMT 390,operator,operator | OR
+MGMT 390,course,course | MGMT
+MRKT 330,course,course | MRKT
+CHEM 360,course,course | CHEM
+AND_CHEM 360_CHEM 361,operator,operator | AND
+CHEM 361,course,course | CHEM
+EVSC 484,course,course | EVSC
+BME 311,course,course | BME
+BME 411,course,course | BME
+CS 645,course,course | CS
+OR_CS 645_IT 610,operator,operator | OR
+IT 610,course,course | IT
+IT 640,course,course | IT
+COM 496,course,course | COM
+BIOL 200,course,course | BIOL
+OR_BIOL 200_R120 200,operator,operator | OR
+R120 200,course,course | R120
+"AND_('|', 'BIOL 200', 'R120 200')_('|', 'CHEM 121', 'CHEM 125')_BIOL 201",operator,operator | AND
+CHEM 121,course,course | CHEM
+OR_CHEM 121_CHEM 125,operator,operator | OR
+CHEM 125,course,course | CHEM
+OR_PHYS 103_PHYS 121,operator,operator | OR
+PHYS 121,course,course | PHYS
+OPSE 410,course,course | OPSE
+CS 631,course,course | CS
+CS 676,course,course | CS
+ECE 232,course,course | ECE
+"AND_('|', 'ECE 232')_('|', 'ECE 321', 'MATH 333', 'MTH 141')",operator,operator | AND
+ECE 321,course,course | ECE
+OR_ECE 321_MATH 333_MTH 141,operator,operator | OR
+ECE 424,course,course | ECE
+ENE 663,course,course | ENE
+ENE 671,course,course | ENE
+IS 265,course,course | IS
+OR_IS 265_MIS 245,operator,operator | OR
+"AND_('|', 'IS 265', 'MIS 245')_IS 390",operator,operator | AND
+IS 390,course,course | IS
+IS 455,course,course | IS
+THTR 411,course,course | THTR
+HIST 365,course,course | HIST
+ECE 620,course,course | ECE
+ECE 739,course,course | ECE
+ARCH 211,course,course | ARCH
+ARCH 530,course,course | ARCH
+"AND_('|', 'INTD 799')_ARCH 506G_ARCH 661",operator,operator | AND
+ARCH 506G,course,course | ARCH
+ARCH 661,course,course | ARCH
+MARC 701C,course,course | MARC
+CHEM 222,course,course | CHEM
+ARCH 576,course,course | ARCH
+ARCH 229,course,course | ARCH
+OR_ARCH 229_ARCH 303,operator,operator | OR
+ARCH 303,course,course | ARCH
+ARCH 304,course,course | ARCH
+ACCT 115,course,course | ACCT
+AND_ACCT 115_ACCT 215_MGMT 216_MIS 385,operator,operator | AND
+ACCT 215,course,course | ACCT
+MGMT 216,course,course | MGMT
+ACCT 340,course,course | ACCT
+MATH 105,course,course | MATH
+OR_MATH 105_MGMT 116_MTH 101_R640 211,operator,operator | OR
+MGMT 116,course,course | MGMT
+MTH 101,course,course | MTH
+R640 211,course,course | R640
+ARCH 531,course,course | ARCH
+CS 656,course,course | CS
+OR_CS 656_ECE 637,operator,operator | OR
+ECE 637,course,course | ECE
+CS 646,course,course | CS
+MATH 211,course,course | MATH
+OR_MATH 211_MATH 213_MTH 221_R640 235,operator,operator | OR
+MATH 213,course,course | MATH
+MTH 221,course,course | MTH
+R640 235,course,course | R640
+"AND_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+MATH 332,course,course | MATH
+MATH 661,course,course | MATH
+IS 765,course,course | IS
+HIST 374,course,course | HIST
+STS 347,course,course | STS
+"AND_('|', 'CS 100', 'CS 101', 'CS 113', 'CS 115')_('|', 'MATH 112', 'MTH 122', 'R640 136')",operator,operator | AND
+OR_MATH 112_MTH 122_R640 136,operator,operator | OR
+MATH 227,course,course | MATH
+ARCH 533,course,course | ARCH
+CIMT 210,course,course | CIMT
+CIMT 310,course,course | CIMT
+ARCH 282,course,course | ARCH
+AND_ARCH 282_INT 221_INT 222_INT 321_INT 363,operator,operator | AND
+INT 221,course,course | INT
+INT 222,course,course | INT
+INT 321,course,course | INT
+INT 363,course,course | INT
+INT 364,course,course | INT
+"AND_('|', 'HUM 101')_('|', 'HUM 102')",operator,operator | AND
+HUM 212,course,course | HUM
+CHEM 124,course,course | CHEM
+OR_CHEM 124_CHEM 125A,operator,operator | OR
+CHEM 125A,course,course | CHEM
+"AND_('|', 'CHEM 124', 'CHEM 125A')_('|', 'CHEM 243', 'CHEM 245')",operator,operator | AND
+CHEM 243,course,course | CHEM
+OR_CHEM 243_CHEM 245,operator,operator | OR
+CHEM 245,course,course | CHEM
+CHEM 244A,course,course | CHEM
+ECET 303,course,course | ECET
+"AND_('|', 'ECET 303')_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_ECET 300",operator,operator | AND
+ECET 300,course,course | ECET
+ECET 305,course,course | ECET
+ARCH 541,course,course | ARCH
+FIN 315,course,course | FIN
+FIN 417,course,course | FIN
+AND_CHEM 126_R120 101_R120 102,operator,operator | AND
+R120 101,course,course | R120
+R120 102,course,course | R120
+EVSC 416,course,course | EVSC
+ECE 362,course,course | ECE
+ECE 461,course,course | ECE
+ARCH 528G,course,course | ARCH
+AND_ARCH 528G_ARCH 529G,operator,operator | AND
+ARCH 529G,course,course | ARCH
+ARCH 630,course,course | ARCH
+IT 201,course,course | IT
+IT 380,course,course | IT
+AS 334,course,course | AS
+AS 443,course,course | AS
+AND_AD 150_INT 222_INT 263,operator,operator | AND
+INT 263,course,course | INT
+INT 264,course,course | INT
+ECE 610,course,course | ECE
+ECE 611,course,course | ECE
+CHE 700B,course,course | CHE
+CE 320,course,course | CE
+AND_CE 320_CE 321,operator,operator | AND
+CE 321,course,course | CE
+CE 322,course,course | CE
+MATH 656,course,course | MATH
+CS 241,course,course | CS
+OR_CS 241_MATH 226_MTH 136,operator,operator | OR
+MATH 226,course,course | MATH
+MTH 136,course,course | MTH
+"AND_('|', 'CS 241', 'MATH 226', 'MTH 136')_CS 114",operator,operator | AND
+CS 114,course,course | CS
+CS 370,course,course | CS
+OR_ECE 321_IE 331_MATH 105_MATH 120_MATH 225_MATH 244_MATH 279_MATH 305_MATH 333_MNET 315_MTH 101_MTH 141_R640 211,operator,operator | OR
+IE 331,course,course | IE
+MATH 120,course,course | MATH
+MATH 279,course,course | MATH
+MATH 305,course,course | MATH
+MNET 315,course,course | MNET
+IS 448,course,course | IS
+OR_MATH 337_MTH 239,operator,operator | OR
+"AND_('|', 'MATH 337', 'MTH 239')_MATH 331_MATH 340",operator,operator | AND
+MATH 450,course,course | MATH
+CE 605,course,course | CE
+AND_AD 150_ID 263,operator,operator | AND
+ID 263,course,course | ID
+ID 264,course,course | ID
+IS 665,course,course | IS
+IS 657,course,course | IS
+OR_PHYS 121_PHYS 121H,operator,operator | OR
+PHYS 121H,course,course | PHYS
+OPSE 301,course,course | OPSE
+BIOL 700B,course,course | BIOL
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'MTEN 201', 'MTSE 301')_('|', 'PHY 104', 'PHYS 121', 'R750 204')_BME 304",operator,operator | AND
+OR_MTEN 201_MTSE 301,operator,operator | OR
+MTSE 301,course,course | MTSE
+PHY 104,course,course | PHY
+OR_PHY 104_PHYS 121_R750 204,operator,operator | OR
+R750 204,course,course | R750
+BME 304,course,course | BME
+BME 422,course,course | BME
+ARCH 572,course,course | ARCH
+AD 112,course,course | AD
+AND_AD 112_AD 150,operator,operator | AND
+DD 284,course,course | DD
+IE 686,course,course | IE
+IE 687,course,course | IE
+COM 312,course,course | COM
+EM 602,course,course | EM
+OR_EM 602_TRAN 650,operator,operator | OR
+TRAN 650,course,course | TRAN
+TRAN 640,course,course | TRAN
+ECET 401,course,course | ECET
+ECET 402,course,course | ECET
+OR_MATH 111_MATH 135_MATH 138_MTH 114_MTH 121_MTH 127_R640 119_R640 135,operator,operator | OR
+MATH 138,course,course | MATH
+MTH 114,course,course | MTH
+R640 119,course,course | R640
+"AND_('|', 'MATH 111', 'MATH 135', 'MATH 138', 'MTH 114', 'MTH 121', 'MTH 127', 'R640 119', 'R640 135')_FIN 218_FIN 315",operator,operator | AND
+FIN 218,course,course | FIN
+FIN 430,course,course | FIN
+CHEM 122,course,course | CHEM
+OR_CHEM 122_CHEM 126,operator,operator | OR
+CHEM 701C,course,course | CHEM
+OR_CS 101_CS 103_CS 104_CS 110_CS 113_CS 115,operator,operator | OR
+CS 104,course,course | CS
+CS 110,course,course | CS
+OPSE 310,course,course | OPSE
+MATH 690,course,course | MATH
+MATH 675,course,course | MATH
+PE 150,course,course | PE
+PE 151,course,course | PE
+ARCH 381,course,course | ARCH
+AND_ARCH 381_ARCH 382,operator,operator | AND
+ARCH 382,course,course | ARCH
+"OR_('&', 'ARCH 381', 'ARCH 382')_ARCH 211",operator,operator | OR
+ARCH 534,course,course | ARCH
+CE 791,course,course | CE
+CE 792,course,course | CE
+AND_MATH 665_MATH 768,operator,operator | AND
+MATH 768,course,course | MATH
+MATH 786,course,course | MATH
+MRKT 339,course,course | MRKT
+MRKT 432,course,course | MRKT
+SET 307,course,course | SET
+SET 407,course,course | SET
+OR_ARCH 295_ID 340,operator,operator | OR
+ID 341,course,course | ID
+ME 311,course,course | ME
+AND_ME 311_MECH 236,operator,operator | AND
+ME 304,course,course | ME
+MATH 671,course,course | MATH
+MATH 771,course,course | MATH
+OR_MATH 213_MTH 221_R640 235,operator,operator | OR
+"AND_('|', 'MATH 213', 'MTH 221', 'R640 235')_('|', 'MATH 222', 'MTH 222')_ECE 231",operator,operator | AND
+ECE 231,course,course | ECE
+ECE 361,course,course | ECE
+OR_ARCH 304_ARCH 329,operator,operator | OR
+ARCH 329,course,course | ARCH
+ARCH 537,course,course | ARCH
+PHIL 351,course,course | PHIL
+ECE 422,course,course | ECE
+HIST 375,course,course | HIST
+CE 611,course,course | CE
+"AND_('|', 'BIOL 201', 'R120 201')_('|', 'BIOL 202', 'R120 202')_('|', 'BIOL 205', 'R120 205')_('|', 'BIOL 206', 'R120 206')_('|', 'PHYS 102', 'PHYS 111')_('|', 'PHYS 102A', 'PHYS 111A')",operator,operator | AND
+OR_PHYS 102_PHYS 111,operator,operator | OR
+OR_PHYS 102A_PHYS 111A,operator,operator | OR
+BIOL 321,course,course | BIOL
+AD 111,course,course | AD
+AND_AD 111_DD 264_DD 275_DD 301,operator,operator | AND
+DD 264,course,course | DD
+DD 275,course,course | DD
+DD 301,course,course | DD
+DD 444,course,course | DD
+CPT 330,course,course | CPT
+CPT 430,course,course | CPT
+CHEM 244,course,course | CHEM
+CHE 612,course,course | CHE
+CHE 756,course,course | CHE
+R120 280,course,course | R120
+OR_R120 280_R120 370,operator,operator | OR
+R120 370,course,course | R120
+BIOL 475,course,course | BIOL
+PHYS 792,course,course | PHYS
+CS 331,course,course | CS
+CS 434,course,course | CS
+FRSC 475,course,course | FRSC
+AND_MIS 245_OM 375,operator,operator | AND
+OM 375,course,course | OM
+MIS 445,course,course | MIS
+MATH 480,course,course | MATH
+HIST 378,course,course | HIST
+MATH 662,course,course | MATH
+MATH 787,course,course | MATH
+BNFO 135,course,course | BNFO
+OR_BNFO 135_CS 100_CS 115,operator,operator | OR
+"AND_('|', 'BNFO 135', 'CS 100', 'CS 115')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+BIOL 470,course,course | BIOL
+STS 230,course,course | STS
+"AND_('|', 'CHEM 121', 'CHEM 125')_('|', 'MATH 110', 'MATH 111', 'MATH 113', 'MATH 135', 'MATH 138', 'MTH 120', 'MTH 121', 'R640 114', 'R640 135')",operator,operator | AND
+MATH 110,course,course | MATH
+OR_MATH 110_MATH 111_MATH 113_MATH 135_MATH 138_MTH 120_MTH 121_R640 114_R640 135,operator,operator | OR
+MATH 113,course,course | MATH
+MTH 120,course,course | MTH
+R640 114,course,course | R640
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHYS 121', 'PHYS 122')_CHEM 126",operator,operator | AND
+OR_PHYS 121_PHYS 122,operator,operator | OR
+PHYS 122,course,course | PHYS
+EVSC 700B,course,course | EVSC
+AND_CHE 611_CHE 626,operator,operator | AND
+CHE 626,course,course | CHE
+CHE 775,course,course | CHE
+MNET 420,course,course | MNET
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 103', 'PHYS 111', 'R750 203')",operator,operator | AND
+PHY 103,course,course | PHY
+OR_PHY 103_PHYS 111_R750 203,operator,operator | OR
+R750 203,course,course | R750
+MECH 235,course,course | MECH
+OR_ECE 231_ECET 201,operator,operator | OR
+ECET 201,course,course | ECET
+ECET 329,course,course | ECET
+OR_AD 112_ARCH 156,operator,operator | OR
+ARCH 156,course,course | ARCH
+ARCH 337,course,course | ARCH
+ACCT 435,course,course | ACCT
+ECE 353,course,course | ECE
+ECE 451,course,course | ECE
+AND_CE 210_CE 332_CE 341,operator,operator | AND
+CE 414,course,course | CE
+OR_CS 331_IS 331,operator,operator | OR
+IS 331,course,course | IS
+"AND_('|', 'CS 331', 'IS 331')_('|', 'ECE 321', 'IE 331', 'MATH 105', 'MATH 120', 'MATH 225', 'MATH 244', 'MATH 279', 'MATH 305', 'MATH 333', 'MNET 315', 'MTH 101', 'MTH 141', 'R640 211')_('|', 'IS 265', 'MIS 245')_IS 344",operator,operator | AND
+IS 344,course,course | IS
+IS 465,course,course | IS
+AND_CS 288_CS 301,operator,operator | AND
+CS 301,course,course | CS
+CS 450,course,course | CS
+SET 303,course,course | SET
+SET 433,course,course | SET
+LIT 320,course,course | LIT
+BME 701C,course,course | BME
+"AND_('|', 'BIOL 340', 'R120 340')_('|', 'R120 355', 'R120 356')",operator,operator | AND
+R120 355,course,course | R120
+OR_R120 355_R120 356,operator,operator | OR
+R120 356,course,course | R120
+BIOL 445,course,course | BIOL
+BIOL 375,course,course | BIOL
+OR_CS 113_CS 115,operator,operator | OR
+IT 240,course,course | IT
+PTC 603,course,course | PTC
+HIST 364,course,course | HIST
+OR_CS 103_CS 113_CS 115_IS 218_IT 202,operator,operator | OR
+IS 218,course,course | IS
+IT 202,course,course | IT
+CHE 230,course,course | CHE
+"AND_('|', 'CHE 230')_('|', 'CHEM 236')_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')",operator,operator | AND
+CHEM 236,course,course | CHEM
+CHE 342,course,course | CHE
+IS 791,course,course | IS
+IS 792,course,course | IS
+PTC 701B,course,course | PTC
+MECH 320,course,course | MECH
+PTC 628,course,course | PTC
+"AND_('|', 'CHEM 221')_('|', 'CHEM 222')",operator,operator | AND
+CHEM 480,course,course | CHEM
+AS 111,course,course | AS
+AS 112,course,course | AS
+MATH 614,course,course | MATH
+AND_MATH 614_MATH 671_MATH 690,operator,operator | AND
+MATH 610,course,course | MATH
+DS 700B,course,course | DS
+BME 210,course,course | BME
+AND_BME 210_BME 301,operator,operator | AND
+BME 301,course,course | BME
+BME 386,course,course | BME
+ECE 251,course,course | ECE
+ECE 252,course,course | ECE
+MTEN 491,course,course | MTEN
+MTEN 492,course,course | MTEN
+ARCH 535,course,course | ARCH
+OR_ACCT 115_ACCT 117,operator,operator | OR
+ACCT 117,course,course | ACCT
+CS 634,course,course | CS
+OR_CS 634_CS 670,operator,operator | OR
+CS 670,course,course | CS
+CS 732,course,course | CS
+OR_CHEM 244_CHEM 245,operator,operator | OR
+CHEM 473,course,course | CHEM
+OR_IS 218_IS 291_IT 202,operator,operator | OR
+IS 291,course,course | IS
+IS 322,course,course | IS
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'PHY 203', 'PHYS 234', 'R750 228', 'R750 273')",operator,operator | AND
+OR_PHY 203_PHYS 234_R750 228_R750 273,operator,operator | OR
+R750 228,course,course | R750
+R750 273,course,course | R750
+PHYS 420,course,course | PHYS
+"AND_('|', 'ECE 232')_ECE 333",operator,operator | AND
+ECE 333,course,course | ECE
+OR_MATH 222_MATH 222H_MTH 222,operator,operator | OR
+MATH 222H,course,course | MATH
+MATH 371,course,course | MATH
+HIST 385,course,course | HIST
+OR_MATH 333_MATH 341_MTH 141,operator,operator | OR
+"AND_('|', 'MATH 333', 'MATH 341', 'MTH 141')_CS 114",operator,operator | AND
+STS 352,course,course | STS
+BME 495,course,course | BME
+BME 496,course,course | BME
+SET 200,course,course | SET
+SET 280,course,course | SET
+ECE 462,course,course | ECE
+ECE 469,course,course | ECE
+SET 200A,course,course | SET
+MATH 310,course,course | MATH
+MATH 410,course,course | MATH
+BME 677,course,course | BME
+BME 678,course,course | BME
+AND_AD 111_AD 112_AD 162,operator,operator | AND
+"OR_('&', 'AD 111', 'AD 112', 'AD 162')_('&', 'ARCH 163', 'ARCH 251', 'ARCH 263')",operator,operator | OR
+ARCH 163,course,course | ARCH
+AND_ARCH 163_ARCH 251_ARCH 263,operator,operator | AND
+ARCH 251,course,course | ARCH
+ARCH 263,course,course | ARCH
+COM 201,course,course | COM
+OR_COM 201_PSY 201,operator,operator | OR
+PSY 201,course,course | PSY
+"AND_('|', 'COM 201', 'PSY 201')_('|', 'ENGL 101', 'HUM 101')_('|', 'ENGL 102', 'HUM 102')",operator,operator | AND
+COM 343,course,course | COM
+"AND_('|', 'ARCH 304', 'ARCH 329')_('|', 'ARCH 314', 'ARCH 327')_('|', 'ARCH 364', 'ARCH 396')_ARCH 324",operator,operator | AND
+ARCH 314,course,course | ARCH
+OR_ARCH 314_ARCH 327,operator,operator | OR
+ARCH 327,course,course | ARCH
+ARCH 364,course,course | ARCH
+OR_ARCH 364_ARCH 396,operator,operator | OR
+ARCH 324,course,course | ARCH
+ARCH 464,course,course | ARCH
+AND_AD 112_AD 150_DD 284,operator,operator | AND
+"OR_('&', 'AD 112', 'AD 150', 'DD 284')_ARCH 295",operator,operator | OR
+DD 321,course,course | DD
+OR_CS 100_CS 106_CS 113_CS 114_CS 115_CS 116,operator,operator | OR
+CS 106,course,course | CS
+CS 116,course,course | CS
+"AND_('|', 'CS 100', 'CS 106', 'CS 113', 'CS 114', 'CS 115', 'CS 116')_('|', 'MATH 111', 'MATH 138', 'MTH 121', 'MTH 127', 'R640 119', 'R640 135')",operator,operator | AND
+OR_MATH 111_MATH 138_MTH 121_MTH 127_R640 119_R640 135,operator,operator | OR
+ECET 435,course,course | ECET
+PHYS 621,course,course | PHYS
+AND_PHYS 621_PHYS 641,operator,operator | AND
+PHYS 641,course,course | PHYS
+PHYS 728,course,course | PHYS
+AND_AD 150_AD 161_AD 162_ARCH 382_DD 263_DD 264_DD 275,operator,operator | AND
+DD 263,course,course | DD
+DD 363,course,course | DD
+IS 310,course,course | IS
+IS 410,course,course | IS
+OR_AD 162_ARCH 381,operator,operator | OR
+AND_BIOL 201_BIOL 205,operator,operator | AND
+BIOL 328,course,course | BIOL
+M111,course,course | M111
+OR_M111_MATH 107_MATH 110_MTH 113_MTH 120_R640 114,operator,operator | OR
+MATH 107,course,course | MATH
+MTH 113,course,course | MTH
+"AND_('|', 'CS 100', 'CS 106', 'CS 113', 'CS 114', 'CS 115', 'CS 116')_ECET 215",operator,operator | AND
+ECET 215,course,course | ECET
+ECET 211,course,course | ECET
+THTR 215,course,course | THTR
+CET 341,course,course | CET
+COM 351,course,course | COM
+EVSC 791,course,course | EVSC
+EVSC 792B,course,course | EVSC
+PSY 210,course,course | PSY
+OR_PSY 210_STS 210,operator,operator | OR
+STS 210,course,course | STS
+PSY 389,course,course | PSY
+AND_AD 201_ARCH 282_ARCH 337_INT 321_INT 322_INT 364,operator,operator | AND
+INT 322,course,course | INT
+INT 464,course,course | INT
+ME 791,course,course | ME
+ME 792B,course,course | ME
+"AND_('|', 'CHEM 121', 'CHEM 125')_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 104', 'PHYS 121', 'R750 204')",operator,operator | AND
+NANO 488,course,course | NANO
+PHIL 337,course,course | PHIL
+COM 313,course,course | COM
+OR_COM 313_ENG 352,operator,operator | OR
+ENG 352,course,course | ENG
+"AND_('|', 'COM 313', 'ENG 352')_CHE 370_MATH 225",operator,operator | AND
+CHE 370,course,course | CHE
+CHE 396,course,course | CHE
+OR_CS 100_CS 113_CS 115,operator,operator | OR
+"AND_('|', 'CS 100', 'CS 113', 'CS 115')_('|', 'IS 117', 'IT 202')",operator,operator | AND
+IS 117,course,course | IS
+OR_IS 117_IT 202,operator,operator | OR
+BME 302,course,course | BME
+BME 321,course,course | BME
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 104', 'PHYS 121', 'R750 204')_FED 101",operator,operator | AND
+PSY 215,course,course | PSY
+AND_ME 405_ME 407,operator,operator | AND
+ME 406,course,course | ME
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'MATH 337', 'MTH 239', 'R640 337')",operator,operator | AND
+MATH 473,course,course | MATH
+ARCH 264,course,course | ARCH
+OR_ARCH 264_ARCH 296,operator,operator | OR
+ARCH 296,course,course | ARCH
+ARCH 317,course,course | ARCH
+"AND_('|', 'IE 331')_('|', 'MATH 112', 'MTH 122', 'R640 136')",operator,operator | AND
+IE 440,course,course | IE
+STS 310,course,course | STS
+ME 215,course,course | ME
+AND_ME 215_MNET 303,operator,operator | AND
+MNET 405,course,course | MNET
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'MECH 236')",operator,operator | AND
+ME 452,course,course | ME
+ECE 642,course,course | ECE
+AND_ECE 642_ECE 673,operator,operator | AND
+ECE 673,course,course | ECE
+ECE 776,course,course | ECE
+BME 491,course,course | BME
+BME 492,course,course | BME
+AND_ECE 232_ECE 271,operator,operator | AND
+ECE 271,course,course | ECE
+ECE 372,course,course | ECE
+CHE 101,course,course | CHE
+MATH 478,course,course | MATH
+DS 791,course,course | DS
+DS 790A,course,course | DS
+"AND_('|', 'CHEM 126')_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')_('|', 'PHYS 111')",operator,operator | AND
+ARCH 505G,course,course | ARCH
+STS 375,course,course | STS
+COM 341,course,course | COM
+OR_MATH 661_MATH 663,operator,operator | OR
+MATH 663,course,course | MATH
+MATH 678,course,course | MATH
+HIST 342,course,course | HIST
+CE 200,course,course | CE
+OR_CE 200_SET 200,operator,operator | OR
+SET 420,course,course | SET
+"AND_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_('|', 'PHYS 102', 'PHYS 111', 'R750 213')",operator,operator | AND
+OR_PHYS 102_PHYS 111_R750 213,operator,operator | OR
+R750 213,course,course | R750
+MET 235,course,course | MET
+ECE 601,course,course | ECE
+ECE 643,course,course | ECE
+STS 311,course,course | STS
+STS 411,course,course | STS
+CE 320A,course,course | CE
+CE 333,course,course | CE
+AND_CE 333_CE 432_CE 443_CE 494,operator,operator | AND
+CE 432,course,course | CE
+CE 443,course,course | CE
+CE 494,course,course | CE
+CE 495,course,course | CE
+AND_MATH 662_MATH 665,operator,operator | AND
+MATH 763,course,course | MATH
+OR_MATH 279_MATH 305,operator,operator | OR
+"AND_('|', 'MATH 279', 'MATH 305')_CE 200_CE 200A",operator,operator | AND
+CE 200A,course,course | CE
+ME 790A,course,course | ME
+IE 701B,course,course | IE
+CHE 210,course,course | CHE
+AND_CHE 210_CHE 230,operator,operator | AND
+CHE 240,course,course | CHE
+"AND_('|', 'ECE 232')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+OPSE 402,course,course | OPSE
+OR_ARCH 263_ARCH 295,operator,operator | OR
+"AND_('|', 'CS 113', 'CS 115')_('|', 'CS 331', 'IS 331')_IT 340",operator,operator | AND
+IT 340,course,course | IT
+IT 490,course,course | IT
+CS 659,course,course | CS
+CS 759,course,course | CS
+OR_MATH 111_MATH 138_MTH 114_MTH 121_MTH 127_R640 119_R640 135,operator,operator | OR
+MRKT 332,course,course | MRKT
+AND_FIN 218_FIN 315,operator,operator | AND
+FIN 403,course,course | FIN
+LIT 386,course,course | LIT
+LIT 372,course,course | LIT
+IE 641,course,course | IE
+ACCT 615,course,course | ACCT
+AND_ACCT 615_FIN 600_HRM 601_MRKT 620,operator,operator | AND
+HRM 601,course,course | HRM
+MRKT 620,course,course | MRKT
+MGMT 692,course,course | MGMT
+"AND_('|', ('&', 'PHYS 102', 'PHYS 102A'), ('&', 'PHYS 111', 'PHYS 111A'))_PHYS 103A",operator,operator | AND
+CS 492,course,course | CS
+CS 493,course,course | CS
+CS 356,course,course | CS
+OR_CS 356_IT 120,operator,operator | OR
+IT 120,course,course | IT
+IT 220,course,course | IT
+ARCH 543G,course,course | ARCH
+ARCH 544G,course,course | ARCH
+EPS 700B,course,course | EPS
+IE 688,course,course | IE
+MATH 309,course,course | MATH
+COM 315,course,course | COM
+"AND_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')_('|', 'MECH 234')_('|', 'MTEN 201')",operator,operator | AND
+MECH 234,course,course | MECH
+MTEN 205,course,course | MTEN
+HIST 344,course,course | HIST
+ECE 374,course,course | ECE
+ECE 463,course,course | ECE
+FIN 627,course,course | FIN
+CHEM 792B,course,course | CHEM
+CE 602,course,course | CE
+CE 606,course,course | CE
+ARCH 429,course,course | ARCH
+ENTR 210,course,course | ENTR
+OR_ENTR 210_ENTR 410,operator,operator | OR
+ENTR 410,course,course | ENTR
+ENTR 320,course,course | ENTR
+AND_ARCH 505G_ARCH 506G,operator,operator | AND
+ARCH 547G,course,course | ARCH
+ARCH 545G,course,course | ARCH
+ARCH 548G,course,course | ARCH
+EPS 701C,course,course | EPS
+MATH 546,course,course | MATH
+CE 701B,course,course | CE
+CHE 375,course,course | CHE
+OR_CHE 375_MTEN 201,operator,operator | OR
+"AND_('|', 'CHE 375', 'MTEN 201')_CHE 342_CHE 349_CHE 370",operator,operator | AND
+CHE 349,course,course | CHE
+CHE 312,course,course | CHE
+ECE 429,course,course | ECE
+ARCH 500G,course,course | ARCH
+AND_ARCH 500G_ARCH 502G_ARCH 529G,operator,operator | AND
+ARCH 502G,course,course | ARCH
+ARCH 503G,course,course | ARCH
+BIOL 320,course,course | BIOL
+BIOL 495,course,course | BIOL
+"AND_('|', 'CHE 375', 'MTEN 201')_CHE 312_CHE 349_CHE 360_CHE 365_IE 492",operator,operator | AND
+CHE 365,course,course | CHE
+IE 492,course,course | IE
+CHE 472,course,course | CHE
+AS 333,course,course | AS
+AND_ECE 231_ECE 232_ECE 251_ENGL 101,operator,operator | AND
+ECE 294,course,course | ECE
+AND_CE 200_CE 200A_CE 350,operator,operator | AND
+CE 350,course,course | CE
+CE 351,course,course | CE
+BME 111,course,course | BME
+AND_BME 111_BME 301,operator,operator | AND
+BME 372,course,course | BME
+AND_MTEN 201_MTEN 202_MTEN 205,operator,operator | AND
+MTEN 206,course,course | MTEN
+CPT 315,course,course | CPT
+OR_CPT 315_ECE 252_ECET 211,operator,operator | OR
+"AND_('|', 'CPT 315', 'ECE 252', 'ECET 211')_('|', 'CS 100', 'CS 106', 'CS 113', 'CS 114', 'CS 115', 'CS 116')_('|', 'ECE 251', 'ECET 215')_('|', 'ECE 271', 'ECET 205')",operator,operator | AND
+OR_ECE 251_ECET 215,operator,operator | OR
+OR_ECE 271_ECET 205,operator,operator | OR
+ECET 205,course,course | ECET
+ECET 311,course,course | ECET
+OR_MATH 211_MATH 213_MATH 221_MTH 221_MTH 235_R640 235,operator,operator | OR
+MATH 221,course,course | MATH
+MTH 235,course,course | MTH
+"AND_('|', 'MATH 211', 'MATH 213', 'MATH 221', 'MTH 221', 'MTH 235', 'R640 235')_('|', 'PHY 103', 'PHYS 103', 'PHYS 106', 'PHYS 111', 'R750 203')",operator,operator | AND
+OR_PHY 103_PHYS 103_PHYS 106_PHYS 111_R750 203,operator,operator | OR
+PHYS 106,course,course | PHYS
+CS 675,course,course | CS
+OR_CS 675_DS 675,operator,operator | OR
+DS 675,course,course | DS
+DS 677,course,course | DS
+OR_ECE 232_ECET 303,operator,operator | OR
+"AND_('|', 'ECE 232', 'ECET 303')_('|', 'ECE 271', 'ECET 205')_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_('|', 'MATH 222', 'MATH 322', 'MTH 222', 'R640 314')",operator,operator | AND
+OR_MATH 222_MATH 322_MTH 222_R640 314,operator,operator | OR
+MATH 322,course,course | MATH
+R640 314,course,course | R640
+LIT 350,course,course | LIT
+ENE 791,course,course | ENE
+ENE 792,course,course | ENE
+OR_ARCH 314_INT 222,operator,operator | OR
+ARCH 543,course,course | ARCH
+AND_CHE 349_CHE 370,operator,operator | AND
+CHE 444,course,course | CHE
+FIN 490,course,course | FIN
+MTEN 700B,course,course | MTEN
+IS 790A,course,course | IS
+ARCH 574,course,course | ARCH
+ARCH 541G,course,course | ARCH
+ARCH 542G,course,course | ARCH
+OR_CS 114_CS 116,operator,operator | OR
+"AND_('|', 'CS 114', 'CS 116')_MATH 337",operator,operator | AND
+CS 438,course,course | CS
+AND_BME 677_BME 678,operator,operator | AND
+BME 679,course,course | BME
+OR_CS 114_CS 116_IT 114,operator,operator | OR
+IT 114,course,course | IT
+AND_CE 210_MECH 237,operator,operator | AND
+MECH 237,course,course | MECH
+CE 431,course,course | CE
+CS 673,course,course | CS
+OR_CS 673_IS 663,operator,operator | OR
+IS 676,course,course | IS
+HIST 369,course,course | HIST
+THTR 217,course,course | THTR
+ARCH 701B,course,course | ARCH
+MATH 346,course,course | MATH
+STS 304,course,course | STS
+STS 304A,course,course | STS
+CS 610,course,course | CS
+CS 744,course,course | CS
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 103', 'PHYS 111', 'R750 203')_MECH 235_MECH 236",operator,operator | AND
+ECE 777,course,course | ECE
+ARCH 463,course,course | ARCH
+BME 672,course,course | BME
+BME 772,course,course | BME
+OR_ARCH 364_DD 364_ID 364_INT 364,operator,operator | OR
+DD 364,course,course | DD
+ID 364,course,course | ID
+"AND_('|', 'ARCH 364', 'DD 364', 'ID 364', 'INT 364')_PHYS 102",operator,operator | AND
+AD 463,course,course | AD
+"AND_('|', 'COM 313', 'ENG 352')_ECET 329_MET 302_MET 303_MET 304_MET 314",operator,operator | AND
+MET 302,course,course | MET
+MET 303,course,course | MET
+MET 304,course,course | MET
+MET 401,course,course | MET
+ENE 664,course,course | ENE
+CIS 652,course,course | CIS
+OR_CIS 652_CIS 656_CS 652_CS 656_ECE 637_ECE 683,operator,operator | OR
+CIS 656,course,course | CIS
+CS 652,course,course | CS
+ECE 683,course,course | ECE
+CS 696,course,course | CS
+CS 782,course,course | CS
+OR_MATH 111_MATH 132_MTH 121_R640 135,operator,operator | OR
+MATH 132,course,course | MATH
+SET 304,course,course | SET
+MATH 447,course,course | MATH
+MATH 677,course,course | MATH
+ARCH 331,course,course | ARCH
+ECE 657,course,course | ECE
+OR_ECE 657_PHYS 687,operator,operator | OR
+PHYS 687,course,course | PHYS
+PHYS 787,course,course | PHYS
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'MATH 279', 'MATH 333')_BME 302_BME 304_BME 321",operator,operator | AND
+OR_MATH 279_MATH 333,operator,operator | OR
+BME 452,course,course | BME
+CHEM 412,course,course | CHEM
+OR_ARCH 211_DD 364_ID 264_INT 264,operator,operator | OR
+INT 351,course,course | INT
+HIST 377,course,course | HIST
+IE 443,course,course | IE
+IE 444,course,course | IE
+CE 636,course,course | CE
+AND_CE 636_CE 639,operator,operator | AND
+CE 639,course,course | CE
+CE 734,course,course | CE
+CS 644,course,course | CS
+OR_CS 644_CS 656_ECE 637,operator,operator | OR
+CS 643,course,course | CS
+OR_CS 100_CS 113_CS 115_MATH 340,operator,operator | OR
+"AND_('|', 'CS 100', 'CS 113', 'CS 115', 'MATH 340')_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+MET 205,course,course | MET
+CS 337,course,course | CS
+MATH 481,course,course | MATH
+STS 349,course,course | STS
+STS 325,course,course | STS
+COM 266,course,course | COM
+OR_COM 266_IT 286,operator,operator | OR
+IT 286,course,course | IT
+IT 287,course,course | IT
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_CS 114",operator,operator | AND
+AND_BME 321_MECH 236,operator,operator | AND
+"OR_('&', 'BME 321', 'MECH 236')_('&', 'MECH 236', 'MECH 320')_BME 372_BME 386_MTEN 201_MTSE 301",operator,operator | OR
+AND_MECH 236_MECH 320,operator,operator | AND
+IE 791,course,course | IE
+IE 792B,course,course | IE
+OR_MATH 341_MATH 344_MATH 447,operator,operator | OR
+MATH 344,course,course | MATH
+MATH 461,course,course | MATH
+"AND_('|', 'CHE 342')_('|', 'CHE 370')_('|', 'CHEM 236')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+CHE 750,course,course | CHE
+CET 313,course,course | CET
+AND_CET 313_CET 314,operator,operator | AND
+CET 314,course,course | CET
+CET 413,course,course | CET
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 104', 'PHYS 121', 'R750 204')",operator,operator | AND
+ENE 630,course,course | ENE
+MATH 604,course,course | MATH
+AND_MATH 604_MATH 605_MATH 606,operator,operator | AND
+MATH 605,course,course | MATH
+MATH 606,course,course | MATH
+MATH 609,course,course | MATH
+"AND_('|', 'CHEM 122', 'CHEM 126')_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 104', 'PHYS 121', 'R750 204')",operator,operator | AND
+ENE 661,course,course | ENE
+AND_ENE 661_ENE 663,operator,operator | AND
+ENE 665,course,course | ENE
+ARCH 408,course,course | ARCH
+CHEM 231,course,course | CHEM
+COM 337,course,course | COM
+ME 635,course,course | ME
+ME 738,course,course | ME
+STS 205,course,course | STS
+HIST 362,course,course | HIST
+AND_CS 280_CS 288,operator,operator | AND
+CS 490,course,course | CS
+AND_ECE 231_ECE 271,operator,operator | AND
+ECE 443,course,course | ECE
+FIN 416,course,course | FIN
+AND_AD 111_AD 112_AD 150,operator,operator | AND
+OR_MATH 110_MATH 111_MATH 112_MATH 135_MATH 138_MTH 120_MTH 121_MTH 122_R640 114_R640 135_R640 136,operator,operator | OR
+OR_BNFO 135_CS 100_CS 101_CS 115,operator,operator | OR
+"AND_('|', 'BNFO 135', 'CS 100', 'CS 101', 'CS 115')_('|', 'MATH 112', 'MTH 122', 'R640 136')_CHEM 126_PHYS 234",operator,operator | AND
+MTSE 451,course,course | MTSE
+ARCH 555G,course,course | ARCH
+ARCH 501G,course,course | ARCH
+HIST 338,course,course | HIST
+ME 441,course,course | ME
+CHE 705,course,course | CHE
+CHE 706,course,course | CHE
+AND_CHEM 126_MATH 222,operator,operator | AND
+CHEM 336,course,course | CHEM
+ECON 201,course,course | ECON
+OR_ECON 201_ECON 266,operator,operator | OR
+ECON 266,course,course | ECON
+"AND_('|', 'ECON 201', 'ECON 266')_('|', 'HRM 301', 'MGMT 190', 'MGMT 390')_FIN 315",operator,operator | AND
+HRM 301,course,course | HRM
+OR_HRM 301_MGMT 190_MGMT 390,operator,operator | OR
+MGMT 391,course,course | MGMT
+PHYS 700B,course,course | PHYS
+"AND_('|', 'CHEM 126')_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHY 104', 'PHYS 121', 'R750 204')",operator,operator | AND
+ENE 262,course,course | ENE
+MTEN 790A,course,course | MTEN
+IT 230,course,course | IT
+CE 733,course,course | CE
+OR_MATH 107_MATH 108_MATH 110_MATH 111_MATH 138_MTH 113_MTH 114_MTH 119_MTH 120_MTH 121_MTH 127_R640 114_R640 119_R640 135,operator,operator | OR
+MATH 108,course,course | MATH
+MTH 119,course,course | MTH
+OR_COM 312_COM 313_ENG 340_ENG 352,operator,operator | OR
+ENG 340,course,course | ENG
+"AND_('|', 'COM 312', 'COM 313', 'ENG 340', 'ENG 352')_ECET 329_MET 302_MET 303_MET 304_MET 314",operator,operator | AND
+MET 450,course,course | MET
+THTR 315,course,course | THTR
+IE 449,course,course | IE
+FRSC 480,course,course | FRSC
+MRKT 435,course,course | MRKT
+ECE 341,course,course | ECE
+OR_ECE 341_ECE 342,operator,operator | OR
+ECE 342,course,course | ECE
+ECE 442,course,course | ECE
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'MECH 234', 'MECH 235')_('|', 'PHY 103', 'PHYS 111', 'R750 203')_PHYS 111A",operator,operator | AND
+OR_MECH 234_MECH 235,operator,operator | OR
+ECE 405,course,course | ECE
+MIS 645,course,course | MIS
+MIS 648,course,course | MIS
+OR_CS 100_CS 101_CS 106_CS 113,operator,operator | OR
+"AND_('|', 'CS 100', 'CS 101', 'CS 106', 'CS 113')_('|', 'ECE 405', 'ECET 201')_('|', 'FED 101', 'MET 105')",operator,operator | AND
+OR_ECE 405_ECET 201,operator,operator | OR
+MET 415,course,course | MET
+AND_PHYS 621_PHYS 631,operator,operator | AND
+PHYS 631,course,course | PHYS
+PHYS 753,course,course | PHYS
+AND_ARCH 251_ARCH 252,operator,operator | AND
+ARCH 252,course,course | ARCH
+"OR_('&', 'ARCH 251', 'ARCH 252')_ARCH 210",operator,operator | OR
+ARCH 210,course,course | ARCH
+HSS 100,course,course | HSS
+OR_HSS 100_HSS 100S_HSS 101_HUM 100_HUM 100S_HUM 101,operator,operator | OR
+HSS 100S,course,course | HSS
+HSS 101,course,course | HSS
+HUM 100,course,course | HUM
+HUM 100S,course,course | HUM
+STS 490,course,course | STS
+COM 491,course,course | COM
+ECE 742,course,course | ECE
+CET 415,course,course | CET
+CET 416,course,course | CET
+"AND_('|', 'CS 100', 'CS 106', 'CS 113', 'CS 114', 'CS 115', 'CS 116')_ECET 415",operator,operator | AND
+ECET 415,course,course | ECET
+ECET 416,course,course | ECET
+THTR 212,course,course | THTR
+CE 634,course,course | CE
+CE 737,course,course | CE
+MNET 395,course,course | MNET
+MNET 495,course,course | MNET
+FIN 620,course,course | FIN
+MGMT 735,course,course | MGMT
+AND_MGMT 216_MIS 245,operator,operator | AND
+MGMT 416,course,course | MGMT
+MGMT 290,course,course | MGMT
+MGMT 360,course,course | MGMT
+HIST 311,course,course | HIST
+CS 491,course,course | CS
+OR_BME 210_BME 310,operator,operator | OR
+BME 310,course,course | BME
+"AND_('|', 'BME 210', 'BME 310')_BME 301",operator,operator | AND
+BME 489,course,course | BME
+AND_CHE 349_CHE 365,operator,operator | AND
+CHE 489,course,course | CHE
+ENE 660,course,course | ENE
+"AND_('|', 'ENGL 101', 'HUM 101')_CE 101_CE 200_CE 200A",operator,operator | AND
+CE 101,course,course | CE
+CE 260,course,course | CE
+AND_ARCH 282_INT 321_INT 363,operator,operator | AND
+ARCH 316,course,course | ARCH
+AND_SET 200_SET 200A,operator,operator | AND
+SET 360,course,course | SET
+BME 303,course,course | BME
+AND_ECE 231_ECE 291,operator,operator | AND
+ECE 291,course,course | ECE
+ARCH 557,course,course | ARCH
+MIT 360,course,course | MIT
+MIT 460,course,course | MIT
+GERHSS,course,course | GERHSS
+AND_GERHSS_HSSCON,operator,operator | AND
+HSSCON,course,course | HSSCON
+HSS 404,course,course | HSS
+BME 493,course,course | BME
+BME 494,course,course | BME
+OR_IE 331_MATH 333_MTH 141,operator,operator | OR
+IE 459,course,course | IE
+OR_MATH 480_MATH 545,operator,operator | OR
+LIT 340,course,course | LIT
+THTR 213,course,course | THTR
+LIT 365,course,course | LIT
+ID 216,course,course | ID
+AND_ID 216_ID 264,operator,operator | AND
+ID 217,course,course | ID
+EVSC 790A,course,course | EVSC
+"AND_('|', 'BME 210', 'BME 310')_('|', 'BME 301')",operator,operator | AND
+BME 471,course,course | BME
+HIST 701B,course,course | HIST
+AND_AD 112_AD 161_AD 162,operator,operator | AND
+"OR_('&', 'AD 112', 'AD 161', 'AD 162')_('&', 'ARCH 211', 'ARCH 395')",operator,operator | OR
+AND_ARCH 211_ARCH 395,operator,operator | AND
+ARCH 395,course,course | ARCH
+DD 449,course,course | DD
+MATH 431,course,course | MATH
+AND_CHE 349_CHE 489_CHE 495_CHEM 339,operator,operator | AND
+CHE 495,course,course | CHE
+CHEM 339,course,course | CHEM
+CHE 496,course,course | CHE
+ACCT 415,course,course | ACCT
+R830 101,course,course | R830
+OR_R830 101_R920 201,operator,operator | OR
+R920 201,course,course | R920
+"AND_('|', 'CHEM 126')_('|', 'MATH 112', 'MTH 122', 'R640 136')",operator,operator | AND
+MET 103,course,course | MET
+MTSE 790A,course,course | MTSE
+"AND_('|', 'CHEM 121', 'CHEM 125')_('|', 'MECH 237')",operator,operator | AND
+CE 360,course,course | CE
+CHE 624,course,course | CHE
+CHE 714,course,course | CHE
+AND_ECE 601_ECE 640_ECE 673,operator,operator | AND
+ECE 640,course,course | ECE
+ECE 740,course,course | ECE
+BME 472,course,course | BME
+CIMT 205,course,course | CIMT
+CIMT 405,course,course | CIMT
+SET 403,course,course | SET
+COM 303,course,course | COM
+"AND_('|', 'CHEM 122', 'CHEM 126')_CHEM 125A",operator,operator | AND
+CHEM 126A,course,course | CHEM
+PHIL 334,course,course | PHIL
+OR_BME 210_CS 101_CS 106_CS 115,operator,operator | OR
+"AND_('|', 'BME 210', 'CS 101', 'CS 106', 'CS 115')_FED 101",operator,operator | AND
+GEN 301,course,course | GEN
+AND_CE 200_CE 200A,operator,operator | AND
+ME 611,course,course | ME
+OR_BNFO 135_CS 100_CS 101_CS 103_CS 104_CS 106_CS 113_CS 115,operator,operator | OR
+"AND_('|', 'CHEM 122', 'CHEM 126')_('|', 'ME 215', 'MTEN 205')",operator,operator | AND
+OR_ME 215_MTEN 205,operator,operator | OR
+ME 438,course,course | ME
+FRSC 201,course,course | FRSC
+FRSC 307,course,course | FRSC
+AND_NJGD_NJGP,operator,operator | AND
+NJGP,course,course | NJGP
+"OR_('&', 'NJGD', 'NJGP')_IS 601",operator,operator | OR
+IS 634,course,course | IS
+CS 265,course,course | CS
+AND_CS 265_CS 266,operator,operator | AND
+CS 266,course,course | CS
+"OR_('&', 'CS 265', 'CS 266')_('&', 'IT 265', 'IT 266')",operator,operator | OR
+IT 265,course,course | IT
+AND_IT 265_IT 266,operator,operator | AND
+IT 266,course,course | IT
+CS 276,course,course | CS
+ENE 701B,course,course | ENE
+"AND_('|', 'ENGL 101', 'HUM 101')_('|', ('&', 'ENGR 101', 'MATH 110'), 'MATH 111', 'MTH 121', 'R640 135')",operator,operator | AND
+ENGR 101,course,course | ENGR
+AND_ENGR 101_MATH 110,operator,operator | AND
+"OR_('&', 'ENGR 101', 'MATH 110')_MATH 111_MTH 121_R640 135",operator,operator | OR
+PTC 632,course,course | PTC
+BIOL 376,course,course | BIOL
+FIN 616,course,course | FIN
+ECE 791,course,course | ECE
+ECE 792B,course,course | ECE
+MATH 691,course,course | MATH
+ECE 452,course,course | ECE
+OR_CS 114_CS 116_IT 102_IT 114,operator,operator | OR
+IT 102,course,course | IT
+PHYS 701C,course,course | PHYS
+MATH 654,course,course | MATH
+"AND_('|', 'CHE 791')_('|', 'INTD 799')",operator,operator | AND
+CHE 701C,course,course | CHE
+LIT 355,course,course | LIT
+AND_CE 341_CE 341A,operator,operator | AND
+CE 341A,course,course | CE
+PSY 321,course,course | PSY
+AND_ME 304_ME 305_ME 312_ME 316,operator,operator | AND
+ME 305,course,course | ME
+ME 316,course,course | ME
+AND_AD 111_AD 112_AD 150_INT 221,operator,operator | AND
+ENGL 100,course,course | ENGL
+OR_ENGL 100_ENGL 101_HUM 100_HUM 101,operator,operator | OR
+CE 450,course,course | CE
+THTR 208,course,course | THTR
+OR_CS 631_IS 631,operator,operator | OR
+IS 631,course,course | IS
+CS 632,course,course | CS
+ARCH 224,course,course | ARCH
+ARCH 545,course,course | ARCH
+MGMT 316,course,course | MGMT
+HUM 232,course,course | HUM
+HIST 379,course,course | HIST
+CHE 201,course,course | CHE
+OR_CHE 201_CHE 240,operator,operator | OR
+"AND_('|', 'CHE 201', 'CHE 240')_('|', 'MATH 222', 'MTH 222')_CHE 260",operator,operator | AND
+CHE 260,course,course | CHE
+"AND_('|', 'MTEN 201', 'MTSE 301')_BME 302_BME 304",operator,operator | AND
+BME 420,course,course | BME
+STS 308,course,course | STS
+MATH 635,course,course | MATH
+MATH 636,course,course | MATH
+AND_MATH 340_MATH 391,operator,operator | AND
+MATH 453,course,course | MATH
+OR_MATH 211_MATH 213_MTH 221_PHY 203_PHYS 231_PHYS 234_R640 235_R750 228_R750 273,operator,operator | OR
+PHYS 231,course,course | PHYS
+"AND_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'PHY 203', 'PHYS 231', 'PHYS 234', 'R640 235', 'R750 228', 'R750 273')_('|', 'MATH 222', 'MATH 238', 'MATH 335', 'MTH 213', 'MTH 222', 'R640 136')",operator,operator | AND
+OR_MATH 222_MATH 238_MATH 335_MTH 213_MTH 222_R640 136,operator,operator | OR
+PHYS 335,course,course | PHYS
+HIST 329,course,course | HIST
+MATH 664,course,course | MATH
+HIST 402,course,course | HIST
+AND_MATH 331_MATH 332_MATH 340,operator,operator | AND
+MATH 495,course,course | MATH
+OR_CS 645_CS 646_CS 696_ECE 638,operator,operator | OR
+ECE 638,course,course | ECE
+CS 647,course,course | CS
+COM 321,course,course | COM
+"AND_('|', 'PSY 210', 'STS 210')_('|', 'PSY 359', 'STS 359')",operator,operator | AND
+PSY 359,course,course | PSY
+OR_PSY 359_STS 359,operator,operator | OR
+STS 359,course,course | STS
+PSY 361,course,course | PSY
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHYS 122')",operator,operator | AND
+OR_CS 652_ECE 683,operator,operator | OR
+"AND_('|', 'CS 652', 'ECE 683')_ECE 673",operator,operator | AND
+ECE 639,course,course | ECE
+AND_AD 161_AD 162,operator,operator | AND
+ID 310,course,course | ID
+CS 701B,course,course | CS
+CS 611,course,course | CS
+COM 490,course,course | COM
+OR_PHYS 231H_PHYS 234_PHYS 234H,operator,operator | OR
+PHYS 234H,course,course | PHYS
+PHYS 418,course,course | PHYS
+IE 701C,course,course | IE
+"AND_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_('|', 'PHY 104', 'PHYS 103', 'PHYS 121', 'R750 204')",operator,operator | AND
+OR_PHY 104_PHYS 103_PHYS 121_R750 204,operator,operator | OR
+AND_FRSC 201_FRSC 307,operator,operator | AND
+FRSC 359,course,course | FRSC
+OR_IS 665_MATH 661,operator,operator | OR
+IS 735,course,course | IS
+CE 410,course,course | CE
+IT 366,course,course | IT
+PHYS 430,course,course | PHYS
+PHYS 442,course,course | PHYS
+PTC 624,course,course | PTC
+"AND_('|', 'CHEM 122', 'CHEM 126')_('|', 'MATH 211', 'MATH 213', 'MATH 309', 'MTH 221')_('|', 'PHY 103', 'PHYS 111', 'R750 203')",operator,operator | AND
+OR_MATH 211_MATH 213_MATH 309_MTH 221,operator,operator | OR
+ECE 421,course,course | ECE
+OR_ECE 421_ECE 481,operator,operator | OR
+ECE 481,course,course | ECE
+ECE 423,course,course | ECE
+AND_CHE 101_CHE 230_CHEM 126_MATH 112,operator,operator | AND
+IS 688,course,course | IS
+USYS 790B,course,course | USYS
+AND_AD 111_DD 264_DD 275,operator,operator | AND
+DD 443,course,course | DD
+STS 342,course,course | STS
+AND_ECE 294_ECE 421,operator,operator | AND
+ECE 489,course,course | ECE
+OR_IS 218_IT 202,operator,operator | OR
+IT 302,course,course | IT
+ID 370,course,course | ID
+OR_MECH 234_MECH 235_MET 235,operator,operator | OR
+PTC 700B,course,course | PTC
+ECE 431,course,course | ECE
+ECE 439,course,course | ECE
+OR_CHEM 122_CHEM 126_CHEM 301,operator,operator | OR
+CHEM 301,course,course | CHEM
+"AND_('|', 'CHEM 122', 'CHEM 126', 'CHEM 301')_('|', 'FED 101', 'MET 105')_('|', 'MECH 237', 'MET 237')",operator,operator | AND
+OR_MECH 237_MET 237,operator,operator | OR
+MET 307,course,course | MET
+ME 439,course,course | ME
+"AND_('|', 'BIOL 200')_BIOL 206",operator,operator | AND
+CE 790A,course,course | CE
+PHYS 421,course,course | PHYS
+OR_CS 356_IT 420,operator,operator | OR
+IT 420,course,course | IT
+CS 357,course,course | CS
+"AND_('|', 'ECE 231')_('|', 'MATH 222', 'MTH 222')",operator,operator | AND
+HIST 367,course,course | HIST
+OR_CPT 315_ECET 211,operator,operator | OR
+"AND_('|', 'CPT 315', 'ECET 211')_ECET 311",operator,operator | AND
+ECET 350,course,course | ECET
+PHYS 441,course,course | PHYS
+PHYS 611,course,course | PHYS
+AND_PHYS 611_PHYS 621,operator,operator | AND
+PHYS 741,course,course | PHYS
+SET 207,course,course | SET
+ECE 701B,course,course | ECE
+THTR 384,course,course | THTR
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHYS 121', 'PHYS 122')_PHYS 121A",operator,operator | AND
+PHYS 121A,course,course | PHYS
+AND_CE 341A_MECH 237,operator,operator | AND
+ECET 411,course,course | ECET
+ARCH 161,course,course | ARCH
+OR_ARCH 161_ARCH 195,operator,operator | OR
+ARCH 195,course,course | ARCH
+ARCH 196,course,course | ARCH
+IT 430,course,course | IT
+HIST 370,course,course | HIST
+IE 700B,course,course | IE
+BIOL 791,course,course | BIOL
+BIOL 790A,course,course | BIOL
+CET 317,course,course | CET
+"AND_('|', 'ECE 231', 'ECET 201')_('|', 'MATH 111', 'MATH 138', 'MTH 114', 'MTH 121', 'MTH 127', 'R640 119', 'R640 135')",operator,operator | AND
+ECET 202,course,course | ECET
+CS 388,course,course | CS
+IT 320,course,course | IT
+HIST 320,course,course | HIST
+MTSE 701B,course,course | MTSE
+"AND_('|', 'COM 313', 'ENG 352')_CHE 312_CHE 360_CHE 370_FED 101_MATH 225",operator,operator | AND
+SET 302,course,course | SET
+SET 401,course,course | SET
+OR_ECET 205_ECET 329,operator,operator | OR
+ECET 414,course,course | ECET
+LIT 361,course,course | LIT
+HIST 384,course,course | HIST
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'PHYS 231H', 'PHYS 234')_PHYS 111_PHYS 111A_PHYS 121_PHYS 121A",operator,operator | AND
+OR_PHYS 231H_PHYS 234,operator,operator | OR
+PHYS 231A,course,course | PHYS
+MRKT 490,course,course | MRKT
+ECET 214,course,course | ECET
+ECET 418,course,course | ECET
+NJB457,course,course | NJB457
+PHYS 485,course,course | PHYS
+ARCH 361,course,course | ARCH
+CS 791,course,course | CS
+CS 792,course,course | CS
+IS 219,course,course | IS
+AND_BIOL 205_BIOL 206,operator,operator | AND
+"OR_('&', 'BIOL 205', 'BIOL 206')_('&', 'R120 101', 'R120 102')_('&', 'R120 205', 'R120 206')",operator,operator | OR
+AND_R120 101_R120 102,operator,operator | AND
+AND_R120 205_R120 206,operator,operator | AND
+EVSC 385,course,course | EVSC
+AND_BIOL 201_BIOL 202,operator,operator | AND
+"OR_('&', 'BIOL 201', 'BIOL 202')_('&', 'R120 201', 'R120 202')_BME 303",operator,operator | OR
+AND_R120 201_R120 202,operator,operator | AND
+"AND_('|', ('&', 'BIOL 201', 'BIOL 202'), ('&', 'R120 201', 'R120 202'), 'BME 303')_BME 352_MATH 222",operator,operator | AND
+BME 352,course,course | BME
+BME 427,course,course | BME
+OR_MATH 111_MATH 138_MTH 114_MTH 121_MTH 127_R640 135,operator,operator | OR
+AND_ENGL 101_ENGL 102,operator,operator | AND
+"OR_('&', 'ENGL 101', 'ENGL 102')_('&', 'HUM 101', 'HUM 102')",operator,operator | OR
+AND_HUM 101_HUM 102,operator,operator | AND
+COM 324,course,course | COM
+MATH 791,course,course | MATH
+MATH 790A,course,course | MATH
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'ME 304')_('|', 'ME 311')",operator,operator | AND
+MATH 373,course,course | MATH
+HIST 701C,course,course | HIST
+BME 105,course,course | BME
+BME 106,course,course | BME
+"AND_('|', 'ECE 271', 'ECET 205')_('|', 'MATH 111', 'MATH 138', 'MTH 114', 'MTH 121', 'MTH 127', 'R640 119', 'R640 135')",operator,operator | AND
+"OR_('&', 'AD 112', 'AD 150')_ARCH 295",operator,operator | OR
+DD 320,course,course | DD
+CE 701C,course,course | CE
+"AND_('|', 'ENGL 101', 'HUM 101')_('|', 'ENGL 102', 'HUM 102')_GER200",operator,operator | AND
+LIT 325,course,course | LIT
+OR_MATH 211_MATH 213_MATH 309_MTH 221_R640 235,operator,operator | OR
+"AND_('|', 'MATH 211', 'MATH 213', 'MATH 309', 'MTH 221', 'R640 235')_MET 303_MET 304",operator,operator | AND
+MET 404,course,course | MET
+OR_CS 114_IS 218_IT 114,operator,operator | OR
+IS 392,course,course | IS
+ARCH 461,course,course | ARCH
+HIST 380,course,course | HIST
+IS 700B,course,course | IS
+AND_ME 611_ME 616,operator,operator | AND
+ME 713,course,course | ME
+"AND_('|', 'MATH 222', 'MTH 222')_CS 101_MECH 237",operator,operator | AND
+ME 425,course,course | ME
+MATH 680,course,course | MATH
+"AND_('|', 'BIOL 201', 'R120 201')_('|', 'BIOL 202', 'R120 202')_('|', 'BIOL 205', 'R120 205')_('|', 'BIOL 206', 'R120 206')_('|', 'ENGL 102', 'HUM 102')",operator,operator | AND
+CS 677,course,course | CS
+ENGR 290,course,course | ENGR
+ENGR 493,course,course | ENGR
+SET 404,course,course | SET
+HIST 387,course,course | HIST
+ENE 361,course,course | ENE
+AND_ECE 294_ECE 353,operator,operator | AND
+ECE 495,course,course | ECE
+"AND_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_('|', 'MECH 237', 'MET 237')",operator,operator | AND
+MET 301,course,course | MET
+COM 323,course,course | COM
+MATH 441,course,course | MATH
+MATH 442,course,course | MATH
+ECE 700B,course,course | ECE
+AND_MATH 605_MATH 608,operator,operator | AND
+MATH 608,course,course | MATH
+AND_DD 263_DD 264,operator,operator | AND
+"OR_('&', 'DD 263', 'DD 264')_ARCH 295",operator,operator | OR
+"AND_('|', ('&', 'DD 263', 'DD 264'), 'ARCH 295')_DD 275",operator,operator | AND
+DD 334,course,course | DD
+CHEM 605,course,course | CHEM
+CHEM 718,course,course | CHEM
+CPT 341,course,course | CPT
+OR_CPT 341_CS 106_CS 113_CS 115,operator,operator | OR
+"AND_('|', 'CPT 341', 'CS 106', 'CS 113', 'CS 115')_('|', 'MATH 305', 'MNET 315')_MIT 360",operator,operator | AND
+OR_MATH 305_MNET 315,operator,operator | OR
+MIT 362,course,course | MIT
+ME 701C,course,course | ME
+AND_CS 241_CS 288,operator,operator | AND
+CS 435,course,course | CS
+OR_BME 210_CS 100_CS 101_CS 106_CS 113_CS 115,operator,operator | OR
+"AND_('|', 'BME 210', 'CS 100', 'CS 101', 'CS 106', 'CS 113', 'CS 115')_('|', 'ECE 231', 'IE 331', 'MATH 225', 'MATH 244', 'MATH 279', 'MATH 305', 'MATH 333', 'MNET 315')",operator,operator | AND
+OR_ECE 231_IE 331_MATH 225_MATH 244_MATH 279_MATH 305_MATH 333_MNET 315,operator,operator | OR
+ENGR 301,course,course | ENGR
+MATH 644,course,course | MATH
+OR_CHEM 244_CHEM 473,operator,operator | OR
+CHEM 475,course,course | CHEM
+"AND_('|', 'CS 331', 'IS 331')_IS 219",operator,operator | AND
+IS 421,course,course | IS
+STS 300,course,course | STS
+IS 373,course,course | IS
+MATH 700B,course,course | MATH
+ECE 658,course,course | ECE
+ECE 758,course,course | ECE
+STS 491,course,course | STS
+ARCH 301,course,course | ARCH
+AND_ECE 252_ECE 291,operator,operator | AND
+ECE 395,course,course | ECE
+MATH 607,course,course | MATH
+CIS 610,course,course | CIS
+OR_CIS 610_CS 610,operator,operator | OR
+CS 667,course,course | CS
+AND_ME 304_ME 312_ME 407,operator,operator | AND
+ME 432,course,course | ME
+HIST 213,course,course | HIST
+PHYS 701B,course,course | PHYS
+STS 307,course,course | STS
+STS 307A,course,course | STS
+BIOL 315,course,course | BIOL
+BIOL 441,course,course | BIOL
+MRKT 420,course,course | MRKT
+CE 739,course,course | CE
+"AND_('|', 'MET 235')_('|', 'MET 237')",operator,operator | AND
+CET 233,course,course | CET
+MNET 318,course,course | MNET
+ARCH 634,course,course | ARCH
+IS 491,course,course | IS
+ARCH 309,course,course | ARCH
+"AND_('|', 'BNFO 135', 'CS 100', 'CS 101', 'CS 115')_('|', 'MATH 222', 'MTH 222')_BIOL 315",operator,operator | AND
+ARCH 564,course,course | ARCH
+ARCH 566,course,course | ARCH
+ENE 465,course,course | ENE
+IT 335,course,course | IT
+OR_CHE 201_CHE 210,operator,operator | OR
+"AND_('|', 'CHE 201', 'CHE 210')_('|', 'MATH 222', 'MTH 222')_CHE 230",operator,operator | AND
+AND_CS 241_CS 356,operator,operator | AND
+CS 351,course,course | CS
+CHE 380,course,course | CHE
+"AND_('|', 'BIOL 340', 'R120 340')_('|', 'BIOL 352', 'R120 352', 'R120 355', 'R120 356')",operator,operator | AND
+BIOL 352,course,course | BIOL
+OR_BIOL 352_R120 352_R120 355_R120 356,operator,operator | OR
+R120 352,course,course | R120
+BIOL 400,course,course | BIOL
+HIST 382,course,course | HIST
+FIN 634,course,course | FIN
+BIOL 347,course,course | BIOL
+ECE 613,course,course | ECE
+BIOL 701C,course,course | BIOL
+DS 789,course,course | DS
+MATH 326,course,course | MATH
+CS 458,course,course | CS
+MRKT 338,course,course | MRKT
+MET 395,course,course | MET
+MET 495,course,course | MET
+"AND_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')_('|', 'PHY 103', 'PHYS 111', 'R750 203')",operator,operator | AND
+ME 435,course,course | ME
+ECON 265,course,course | ECON
+"AND_('|', 'PSY 210', 'STS 210')_STS 307A",operator,operator | AND
+PSY 333,course,course | PSY
+ME 431,course,course | ME
+AND_ARCH 500G_ARCH 555G,operator,operator | AND
+ARCH 622,course,course | ARCH
+ME 455,course,course | ME
+"AND_('|', 'BME 210', 'BME 310')_('|', 'BME 302')_('|', 'MATH 279', 'MATH 333', 'MTH 141')",operator,operator | AND
+OR_MATH 279_MATH 333_MTH 141,operator,operator | OR
+BME 383,course,course | BME
+ARCH 363,course,course | ARCH
+OR_ARCH 363_DD 264_ID 264_INT 264,operator,operator | OR
+AD 490,course,course | AD
+ARCH 538,course,course | ARCH
+ENGR 210,course,course | ENGR
+ENGR 310,course,course | ENGR
+BNFO 701B,course,course | BNFO
+CS 251,course,course | CS
+OR_CS 251_ECE 251,operator,operator | OR
+"AND_('|', 'CS 251', 'ECE 251')_('|', 'ECE 321', 'MATH 333', 'MTH 141')",operator,operator | AND
+ECE 453,course,course | ECE
+ARCH 423,course,course | ARCH
+OR_BME 321_MECH 320,operator,operator | OR
+"AND_('|', 'BME 321', 'MECH 320')_BME 302_MECH 236",operator,operator | AND
+BME 351,course,course | BME
+"AND_('|', 'CS 113', 'CS 115')_('|', 'MATH 333', 'MATH 341')_CS 100",operator,operator | AND
+OR_MATH 333_MATH 341,operator,operator | OR
+CS 375,course,course | CS
+OR_MECH 234_MECH 235_MECH 320,operator,operator | OR
+ME 339,course,course | ME
+AND_ARCH 501G_ARCH 528G_ARCH 541G_ARCH 555G,operator,operator | AND
+FIN 624,course,course | FIN
+COM 353,course,course | COM
+MIS 490,course,course | MIS
+IS 690,course,course | IS
+BIOL 342,course,course | BIOL
+ARCH 663,course,course | ARCH
+OR_MATH 238_MTH 213_R640 136,operator,operator | OR
+CMT 332,course,course | CMT
+MRKT 430,course,course | MRKT
+CE 616,course,course | CE
+"AND_('|', 'ENGL 101', 'HUM 101')_ARCH 110",operator,operator | AND
+ARCH 110,course,course | ARCH
+AND_ARCH 110_ARCH 156_ARCH 196,operator,operator | AND
+"OR_('&', 'ARCH 110', 'ARCH 156', 'ARCH 196')_('&', 'ARCH 156', 'ARCH 161', 'ARCH 164')",operator,operator | OR
+AND_ARCH 156_ARCH 161_ARCH 164,operator,operator | AND
+ARCH 164,course,course | ARCH
+ECE 659,course,course | ECE
+AND_ECE 271_ECE 291_ECE 372,operator,operator | AND
+ECE 392,course,course | ECE
+SET 203,course,course | SET
+IE 461,course,course | IE
+"AND_('|', 'MATH 545', 'MATH 645')_MATH 656",operator,operator | AND
+MATH 712,course,course | MATH
+MATH 713,course,course | MATH
+IS 701C,course,course | IS
+MTSE 630,course,course | MTSE
+MTSE 655,course,course | MTSE
+OR_ECE 232_ECET 202,operator,operator | OR
+"AND_('|', 'ECE 232', 'ECET 202')_ECET 205",operator,operator | AND
+ME 437,course,course | ME
+OR_ECE 291_ECE 294,operator,operator | OR
+"AND_('|', 'ECE 291', 'ECE 294')_ECE 232_ECE 271",operator,operator | AND
+ECE 371,course,course | ECE
+"AND_('|', 'MATH 111', 'MTH 121', 'R640 135')_('|', 'MATH 112', 'MTH 122', 'R640 136')_PHYS 111_PHYS 111A_PHYS 121A",operator,operator | AND
+TRAN 701C,course,course | TRAN
+AND_ARCH 156_MATH 107,operator,operator | AND
+"OR_('&', 'ARCH 156', 'MATH 107')_('&', 'ENGR 101', 'MATH 110')_MATH 111_MATH 113_MATH 138",operator,operator | OR
+ENGR 320,course,course | ENGR
+AND_BIOL 205_BIOL 206_R120 201_R120 202,operator,operator | AND
+BIOL 462,course,course | BIOL
+CE 307,course,course | CE
+TRAN 701B,course,course | TRAN
+COM 390,course,course | COM
+BME 373,course,course | BME
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'MTEN 201', 'MTSE 301')_('|', ('&', 'BIOL 201', 'BIOL 202'), ('&', 'R120 201', 'R120 202'), 'BME 303')_BME 302",operator,operator | AND
+BME 430,course,course | BME
+MATH 701B,course,course | MATH
+OR_FED 101_MET 103,operator,operator | OR
+ENGR 350,course,course | ENGR
+CHEM 340,course,course | CHEM
+IT 331,course,course | IT
+ECE 449,course,course | ECE
+ECE 590,course,course | ECE
+ECE 591,course,course | ECE
+AND_ARCH 224_ARCH 304_ARCH 314,operator,operator | AND
+"OR_('&', 'ARCH 224', 'ARCH 304', 'ARCH 314')_('&', 'ARCH 304', 'ARCH 323', 'ARCH 327')",operator,operator | OR
+AND_ARCH 304_ARCH 323_ARCH 327,operator,operator | AND
+ARCH 323,course,course | ARCH
+ARCH 483,course,course | ARCH
+"AND_('|', 'ENGL 102', 'HUM 102')_('|', 'R510 315', 'R510 316')_GER200_HSS 404",operator,operator | AND
+R510 315,course,course | R510
+OR_R510 315_R510 316,operator,operator | OR
+R510 316,course,course | R510
+HIST 490,course,course | HIST
+DS 792B,course,course | DS
+"AND_('|', 'INTD 799')_BIOL 791",operator,operator | AND
+BIOL 790B,course,course | BIOL
+MET 448,course,course | MET
+ENE 790A,course,course | ENE
+OR_MATH 333_MTH 141,operator,operator | OR
+IS 461,course,course | IS
+IT 635,course,course | IT
+COM 310,course,course | COM
+ARCH 546,course,course | ARCH
+"AND_('|', 'BIOL 200', 'R120 200')_('|', 'CHEM 121', 'CHEM 125')_BIOL 202",operator,operator | AND
+OR_CHE 230_CHE 232,operator,operator | OR
+CHE 232,course,course | CHE
+"AND_('|', 'CHE 230', 'CHE 232')_('|', 'CHEM 122', 'CHEM 126')_CHEM 125A",operator,operator | AND
+OR_CHEM 222_CHEM 231_CHEM 236_CHEM 243_CHEM 245_CHEM 360,operator,operator | OR
+AND_AD 111_AD 112_AD 150_DD 263,operator,operator | AND
+OR_FIN 218_FIN 315,operator,operator | OR
+"AND_('|', 'FIN 218', 'FIN 315')_MGMT 216",operator,operator | AND
+THTR 364,course,course | THTR
+MET 403,course,course | MET
+LIT 382,course,course | LIT
+AND_CHE 611_CHE 612_CHE 626,operator,operator | AND
+CHE 734,course,course | CHE
+"AND_('|', 'ECE 405')_('|', 'MATH 279', 'MATH 333', 'MTH 141')_('|', 'MECH 236')",operator,operator | AND
+ME 700B,course,course | ME
+STS 351,course,course | STS
+ARCH 310,course,course | ARCH
+ARCH 410,course,course | ARCH
+HIST 372,course,course | HIST
+MNE 602,course,course | MNE
+"AND_('|', 'MATH 111', 'MTH 121', 'R640 135')_('|', 'MATH 112', 'R640 136')_PHYS 111_PHYS 111A",operator,operator | AND
+OR_MATH 112_R640 136,operator,operator | OR
+ECE 756,course,course | ECE
+ENGR 491,course,course | ENGR
+ENGR 492,course,course | ENGR
+AND_ME 304_ME 311,operator,operator | AND
+ME 451,course,course | ME
+MATH 756,course,course | MATH
+"AND_('|', 'CHEM 122', 'CHEM 126')_('|', 'MATH 211', 'MATH 213')_BME 111_MATH 112_PHYS 111",operator,operator | AND
+OR_MATH 211_MATH 213,operator,operator | OR
+"AND_('|', 'BME 321', 'MECH 320')_BME 302",operator,operator | AND
+BME 478,course,course | BME
+AND_ECE 341_ECE 374_ECE 392,operator,operator | AND
+ECE 494,course,course | ECE
+ECE 414,course,course | ECE
+ECE 417,course,course | ECE
+AND_CET 233_MATH 238,operator,operator | AND
+CET 331,course,course | CET
+MATH 745,course,course | MATH
+BME 700B,course,course | BME
+OR_DS 675_DS 677,operator,operator | OR
+DS 680,course,course | DS
+HIST 352,course,course | HIST
+LIT 331,course,course | LIT
+CS 408,course,course | CS
+ENE 701C,course,course | ENE
+BIOL 792B,course,course | BIOL
+ME 620,course,course | ME
+ME 621,course,course | ME
+AND_MGMT 216_MGMT 316_MRKT 330,operator,operator | AND
+MRKT 378,course,course | MRKT
+PTC 701C,course,course | PTC
+EVSC 701B,course,course | EVSC
+CHEM 310,course,course | CHEM
+CHEM 311,course,course | CHEM
+ECET 419,course,course | ECET
+CHE 790A,course,course | CHE
+AND_ECE 251_ECE 271_ECE 291,operator,operator | AND
+ECE 394,course,course | ECE
+LIT 330,course,course | LIT
+"AND_('|', 'ARCH 264', 'ARCH 296')_('|', ('&', 'ARCH 381', 'ARCH 382'), 'ARCH 211')_ARCH 224",operator,operator | AND
+HIST 310,course,course | HIST
+IT 383,course,course | IT
+MATH 345,course,course | MATH
+ECE 755,course,course | ECE
+AND_CE 321_SET 207,operator,operator | AND
+SET 440,course,course | SET
+ECET 412,course,course | ECET
+"AND_('|', 'CS 100', 'CS 103')_('|', 'MATH 333', 'MGMT 216', 'MTH 141')_FIN 218",operator,operator | AND
+OR_MATH 333_MGMT 216_MTH 141,operator,operator | OR
+ME 433,course,course | ME
+HIST 381,course,course | HIST
+PHYS 114,course,course | PHYS
+OR_BIOL 315_BIOL 340_BIOL 341_BIOL 447_R120 340_R120 444,operator,operator | OR
+BIOL 341,course,course | BIOL
+BIOL 447,course,course | BIOL
+R120 444,course,course | R120
+BIOL 448,course,course | BIOL
+OR_MATH 110_MTH 120_NJB57_R640 114,operator,operator | OR
+NJB57,course,course | NJB57
+STS 315,course,course | STS
+AND_CHE 624_CHE 626,operator,operator | AND
+CHE 722,course,course | CHE
+PSY 339,course,course | PSY
+"AND_('|', 'COM 313', 'ENG 352')_ECET 305_ECET 344_ECET 411",operator,operator | AND
+ECET 400,course,course | ECET
+ARCH 701C,course,course | ARCH
+PHYS 320,course,course | PHYS
+PHYS 321,course,course | PHYS
+AND_ECE 451_ECE 452_ECE 495,operator,operator | AND
+ECE 459,course,course | ECE
+"AND_('|', 'BIOL 200')_BIOL 205",operator,operator | AND
+AND_ECE 271_ECE 291,operator,operator | AND
+ECE 375,course,course | ECE
+OR_BME 210_BNFO 135_CS 101_CS 115,operator,operator | OR
+"AND_('|', 'BME 210', 'BNFO 135', 'CS 101', 'CS 115')_('|', 'BME 302')_('|', 'BME 321')_('|', 'MATH 279', 'MATH 333', 'MTH 141')_('|', 'MECH 236')",operator,operator | AND
+BME 384,course,course | BME
+IE 650,course,course | IE
+IE 704,course,course | IE
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'ME 231')_('|', 'MECH 236')",operator,operator | AND
+ME 231,course,course | ME
+ECET 395,course,course | ECET
+ECET 495,course,course | ECET
+PHIL 335,course,course | PHIL
+CET 435,course,course | CET
+"AND_('|', 'ENGL 101', 'HUM 101')_ECE 231_ECE 232",operator,operator | AND
+MATH 699,course,course | MATH
+MATH 676,course,course | MATH
+AND_CHEM 121_CHEM 125A,operator,operator | AND
+"OR_('&', 'CHEM 121', 'CHEM 125A')_('&', 'CHEM 125', 'CHEM 125A')_CHEM 301",operator,operator | OR
+AND_CHEM 125_CHEM 125A,operator,operator | AND
+"AND_('|', ('&', 'CHEM 121', 'CHEM 125A'), ('&', 'CHEM 125', 'CHEM 125A'), 'CHEM 301')_MET 103",operator,operator | AND
+MNET 215,course,course | MNET
+"AND_('|', 'CS 100', 'CS 106', 'CS 113', 'CS 114', 'CS 115', 'CS 116')_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')",operator,operator | AND
+ARCH 504G,course,course | ARCH
+ENE 700B,course,course | ENE
+IE 445,course,course | IE
+"AND_('|', 'MATH 222', 'MTH 222')_PHYS 442",operator,operator | AND
+PHYS 446,course,course | PHYS
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'MECH 234', 'MECH 235', 'MECH 320')_('|', 'PHY 103', 'PHYS 111', 'R750 203')_PHYS 111A",operator,operator | AND
+AND_MATH 340_MATH 432,operator,operator | AND
+MATH 432,course,course | MATH
+MATH 433,course,course | MATH
+CS 482,course,course | CS
+"AND_('|', 'BNFO 135', 'CS 100', 'CS 101', 'CS 103', 'CS 104', 'CS 106', 'CS 113', 'CS 115')_AD 112_AD 150",operator,operator | AND
+BIOL 484,course,course | BIOL
+"AND_('|', 'MATH 111', 'MATH 138', 'MTH 114', 'MTH 121', 'MTH 127', 'R640 119', 'R640 135')_('|', 'PHY 104', 'PHYS 103', 'PHYS 121', 'R750 204')",operator,operator | AND
+ESC 701B,course,course | ESC
+OR_ARCH 363_ARCH 395,operator,operator | OR
+CHE 701B,course,course | CHE
+IS 684,course,course | IS
+"AND_('|', 'EM 602', 'TRAN 650')_TRAN 610",operator,operator | AND
+TRAN 610,course,course | TRAN
+TRAN 765,course,course | TRAN
+ECE 622,course,course | ECE
+CHEM 700B,course,course | CHEM
+AND_ME 215_MECH 237,operator,operator | AND
+ME 470,course,course | ME
+MATH 451,course,course | MATH
+CS 790A,course,course | CS
+"AND_('|', 'MATH 244', 'MATH 333', 'MTH 141')_('|', 'MATH 346')",operator,operator | AND
+MATH 347,course,course | MATH
+IT 360,course,course | IT
+HIST 366,course,course | HIST
+HIST 390,course,course | HIST
+BNFO 601,course,course | BNFO
+BNFO 620,course,course | BNFO
+ECE 413,course,course | ECE
+OR_ECE 413_ECE 414,operator,operator | OR
+ECE 416,course,course | ECE
+IE 481,course,course | IE
+IE 482,course,course | IE
+ID 312,course,course | ID
+CS 690,course,course | CS
+AND_ECE 232_ECE 251,operator,operator | AND
+ECE 368,course,course | ECE
+CE 641,course,course | CE
+CE 742,course,course | CE
+AND_CHE 360_CHE 370_CS 115,operator,operator | AND
+MTSE 601,course,course | MTSE
+AND_MTSE 601_MTSE 610,operator,operator | AND
+MTSE 610,course,course | MTSE
+MTSE 681,course,course | MTSE
+ECE 790A,course,course | ECE
+DD 601,course,course | DD
+AND_DD 601_DD 602,operator,operator | AND
+DD 602,course,course | DD
+DD 622,course,course | DD
+OR_ENGR 101_MATH 111_MTH 121_R640 135,operator,operator | OR
+ME 637,course,course | ME
+OR_BNFO 135_CS 100_CS 101_CS 103_CS 104_CS 111_CS 113_CS 115,operator,operator | OR
+CS 111,course,course | CS
+"AND_('|', 'BNFO 135', 'CS 100', 'CS 101', 'CS 103', 'CS 104', 'CS 111', 'CS 113', 'CS 115')_('|', 'ECE 321', 'IE 331', 'MATH 105', 'MATH 120', 'MATH 225', 'MATH 244', 'MATH 279', 'MATH 305', 'MATH 333', 'MNET 315', 'MTH 101', 'MTH 141', 'R640 211')",operator,operator | AND
+IS 333,course,course | IS
+HIST 373,course,course | HIST
+BIOL 630,course,course | BIOL
+BIOL 731,course,course | BIOL
+FIN 402,course,course | FIN
+COM 350,course,course | COM
+AND_ECE 231_ECE 232,operator,operator | AND
+PHYS 790A,course,course | PHYS
+BIOL 701B,course,course | BIOL
+"AND_('|', 'BIOL 201', 'R120 201')_('|', 'BIOL 202', 'R120 202')_('|', 'BIOL 205', 'R120 205')_('|', 'BIOL 206', 'R120 206')_('|', 'MATH 111', 'MATH 238', 'MTH 121', 'MTH 213', 'R640 135', 'R640 136')",operator,operator | AND
+OR_MATH 111_MATH 238_MTH 121_MTH 213_R640 135_R640 136,operator,operator | OR
+BIOL 468,course,course | BIOL
+LIT 364,course,course | LIT
+IE 439,course,course | IE
+IE 466,course,course | IE
+ENE 666,course,course | ENE
+FRSC 479,course,course | FRSC
+MGMT 640,course,course | MGMT
+MGMT 740,course,course | MGMT
+ENTR 490,course,course | ENTR
+AND_CE 210_CE 260_CE 320_CE 321_CE 341_CE 341A_CE 350,operator,operator | AND
+LIT 378,course,course | LIT
+OR_ARCH 495_ARCH 563,operator,operator | OR
+ARCH 563,course,course | ARCH
+"AND_('|', 'ARCH 495', 'ARCH 563')_ARCH 561",operator,operator | AND
+ARCH 595,course,course | ARCH
+SET 423,course,course | SET
+DD 464,course,course | DD
+MARC 701B,course,course | MARC
+AND_CS 100_CS 280,operator,operator | AND
+BIOL 440,course,course | BIOL
+THTR 365,course,course | THTR
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'ME 215')_('|', 'MECH 237')",operator,operator | AND
+ME 315,course,course | ME
+"AND_('|', 'FED 101', 'MET 105')_('|', 'MATH 112', 'MATH 238', 'MTH 122', 'MTH 213', 'R640 136')_('|', 'MECH 237', 'MET 237')",operator,operator | AND
+MET 407,course,course | MET
+MTSE 701C,course,course | MTSE
+MTSE 724,course,course | MTSE
+HIST 383,course,course | HIST
+"AND_('|', 'ECE 232')_('|', 'ECE 321', 'MATH 333', 'MTH 141', 'R640 333')",operator,operator | AND
+OR_ECE 321_MATH 333_MTH 141_R640 333,operator,operator | OR
+R640 333,course,course | R640
+AND_ECE 232_MATH 337,operator,operator | AND
+"OR_('&', 'ECE 232', 'MATH 337')_ECE 333",operator,operator | OR
+EM 701C,course,course | EM
+PHIL 355,course,course | PHIL
+"AND_('|', 'MATH 244', 'MATH 333', 'MTH 141')_('|', 'MATH 340')",operator,operator | AND
+MATH 448,course,course | MATH
+IE 610,course,course | IE
+OR_IE 610_TRAN 610,operator,operator | OR
+TRAN 705,course,course | TRAN
+CET 431,course,course | CET
+PHYS 444,course,course | PHYS
+MATH 356,course,course | MATH
+OR_HSS 100_HSS 100S_HSS 101_HSS 101H_HSS 101S,operator,operator | OR
+HSS 101H,course,course | HSS
+HSS 101S,course,course | HSS
+HIST 725,course,course | HIST
+IE 623,course,course | IE
+AND_IE 623_IE 650,operator,operator | AND
+IE 705,course,course | IE
+IS 683,course,course | IS
+PHYS 433,course,course | PHYS
+STS 312,course,course | STS
+OR_BIOL 352_R120 352,operator,operator | OR
+BIOL 453,course,course | BIOL
+HIST 395,course,course | HIST
+CE 502,course,course | CE
+EM 631,course,course | EM
+ENE 662,course,course | ENE
+BIOL 222,course,course | BIOL
+COM 369,course,course | COM
+MATH 388,course,course | MATH
+OR_BNFO 135_CS 100_CS 101_CS 103_CS 104_CS 113_CS 115,operator,operator | OR
+"AND_('|', 'BNFO 135', 'CS 100', 'CS 101', 'CS 103', 'CS 104', 'CS 113', 'CS 115')_('|', 'ENGL 101', 'HUM 101')_GER200",operator,operator | AND
+CS 210,course,course | CS
+ECE 425,course,course | ECE
+MTSE 700B,course,course | MTSE
+AND_INT 221_INT 222_INT 264_INT 321_INT 350,operator,operator | AND
+INT 350,course,course | INT
+CS 700B,course,course | CS
+PTC 698,course,course | PTC
+HUM 211,course,course | HUM
+AND_CHEM 125_PHYS 111,operator,operator | AND
+EVSC 325,course,course | EVSC
+OR_BME 210_CS 101_CS 106_CS 113_CS 115,operator,operator | OR
+ENGR 424,course,course | ENGR
+DS 632,course,course | DS
+EM 700B,course,course | EM
+MGMT 350,course,course | MGMT
+BME 451,course,course | BME
+FIN 626,course,course | FIN
+OR_MATH 279_MATH 305_MATH 333_MNET 315,operator,operator | OR
+BMET 415,course,course | BMET
+MGMT 490,course,course | MGMT
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'MATH 346')",operator,operator | AND
+ACCT 403,course,course | ACCT
+ENTR 330,course,course | ENTR
+ENGL 096,course,course | ENGL
+OR_ENGL 096_HUM 099_HUM 099S,operator,operator | OR
+HUM 099,course,course | HUM
+HUM 099S,course,course | HUM
+AND_AD 150_DD 284_IT 201,operator,operator | AND
+DD 415,course,course | DD
+AND_AD 111_AD 112_AD 150_AD 161_AD 162,operator,operator | AND
+"OR_('&', 'AD 111', 'AD 112', 'AD 150', 'AD 161', 'AD 162')_('&', 'ARCH 155', 'ARCH 156', 'ARCH 163', 'ARCH 164')",operator,operator | OR
+ARCH 155,course,course | ARCH
+AND_ARCH 155_ARCH 156_ARCH 163_ARCH 164,operator,operator | AND
+AD 325,course,course | AD
+IS 701B,course,course | IS
+LIT 376,course,course | LIT
+MATH 792B,course,course | MATH
+ECET 365,course,course | ECET
+HIST 214,course,course | HIST
+OR_MATH 211_MTH 211,operator,operator | OR
+MTH 211,course,course | MTH
+IS 350,course,course | IS
+PTC 605,course,course | PTC
+FIN 655,course,course | FIN
+HSS 407,course,course | HSS
+IT 386,course,course | IT
+AND_ECE 673_ECE 683,operator,operator | AND
+ECE 783,course,course | ECE
+ENE 360,course,course | ENE
+FIN 641,course,course | FIN
+OR_FIN 641_MATH 605,operator,operator | OR
+PHYS 350,course,course | PHYS
+OR_ECE 321_ECE 395,operator,operator | OR
+"AND_('|', 'ECE 321', 'ECE 395')_('|', 'ECE 341', 'ECE 342')_ECE 353_ECE 368_ECE 372_ECE 392_ECE 394",operator,operator | AND
+"AND_('|', 'CS 100', 'CS 101', 'CS 113', 'CS 115')_('|', 'MATH 211', 'MATH 213', 'MTH 221', 'R640 235')",operator,operator | AND
+"AND_('|', 'MATH 105', 'MGMT 116', 'MTH 101', 'R640 211')_MRKT 330",operator,operator | AND
+MRKT 331,course,course | MRKT
+EM 636,course,course | EM
+OR_EM 636_MGMT 641,operator,operator | OR
+MGMT 641,course,course | MGMT
+EM 637,course,course | EM
+BIOL 337,course,course | BIOL
+BIOL 383,course,course | BIOL
+MRKT 360,course,course | MRKT
+CHEM 210,course,course | CHEM
+"AND_('|', 'BME 210', 'BME 310')_('|', 'MATH 222', 'MTH 222')_BME 301",operator,operator | AND
+BME 333,course,course | BME
+"AND_('|', 'MATH 222', 'MTH 222')_('|', 'MATH 328', 'MATH 335')_('|', 'PHY 203', 'PHYS 234', 'R750 228', 'R750 273')",operator,operator | AND
+OR_MATH 328_MATH 335,operator,operator | OR
+CHEM 491,course,course | CHEM
+CHEM 492,course,course | CHEM
+BIOL 790C,course,course | BIOL
+"AND_('|', 'PHYS 121')_R120 355",operator,operator | AND
+BIOL 451,course,course | BIOL
+"AND_('|', 'CHEM 122', 'CHEM 126')_('|', ('&', 'CHEM 125A', 'CHEM 126A'), 'CHEM 124')",operator,operator | AND
+AND_CHEM 125A_CHEM 126A,operator,operator | AND
+"OR_('&', 'CHEM 125A', 'CHEM 126A')_CHEM 124",operator,operator | OR
+BIOL 635,course,course | BIOL
+BIOL 636,course,course | BIOL
+PBL 101,course,course | PBL
+PBL 201,course,course | PBL
+HIST 489,course,course | HIST
+HIST 334,course,course | HIST
+PHYS 721,course,course | PHYS
+ECE 432,course,course | ECE
+AND_BIOL 201_BIOL 202_BIOL 205_BIOL 206,operator,operator | AND
+"OR_('&', 'BIOL 201', 'BIOL 202', 'BIOL 205', 'BIOL 206')_('&', 'R120 201', 'R120 202', 'R120 205', 'R120 206')",operator,operator | OR
+AND_R120 201_R120 202_R120 205_R120 206,operator,operator | AND
+BIOL 338,course,course | BIOL
+AND_NJGD_NJGP_NJGS,operator,operator | AND
+NJGS,course,course | NJGS
+"OR_('&', 'NJGD', 'NJGP', 'NJGS')_IS 665",operator,operator | OR
+IS 687,course,course | IS
+AND_CHE 342_CHE 370,operator,operator | AND
+FIN 422,course,course | FIN
+BDS 725,course,course | BDS
+BDS 726,course,course | BDS
+"AND_('|', 'MATH 111', 'MTH 121', 'R640 135')_('|', 'PHYS 121', 'PHYS 122')_PHYS 111_PHYS 111A",operator,operator | AND
+AND_NJGP_NJGS,operator,operator | AND
+"OR_('&', 'NJGP', 'NJGS')_IS 601",operator,operator | OR
+CHEM 474,course,course | CHEM
+CHEM 701B,course,course | CHEM
+FIN 642,course,course | FIN
+AND_FIN 642_MATH 605,operator,operator | AND
+FIN 643,course,course | FIN
+"AND_('|', 'CHEM 122', 'CHEM 126')_('|', 'PHYS 111')",operator,operator | AND
+ARCH 536,course,course | ARCH
+ARCH 223,course,course | ARCH
+OR_ARCH 223_ARCH 541G,operator,operator | OR
+"AND_('|', 'ARCH 223', 'ARCH 541G')_('|', 'ARCH 227', 'ARCH 543G')_('|', 'ARCH 229', 'ARCH 545G')_ARCH 251_ARCH 252_ARCH 264",operator,operator | AND
+ARCH 227,course,course | ARCH
+OR_ARCH 227_ARCH 543G,operator,operator | OR
+OR_ARCH 229_ARCH 545G,operator,operator | OR
+ME 625,course,course | ME
+OR_MATH 112_MATH 238_MTH 122_R640 136,operator,operator | OR
+HIST 388,course,course | HIST
+OR_CS 659_ECE 643,operator,operator | OR
+ECE 743,course,course | ECE
+HIST 341,course,course | HIST
+ENGR 410,course,course | ENGR
+HIST 363,course,course | HIST
+AND_ECE 640_ECE 673,operator,operator | AND
+ECE 747,course,course | ECE
+CS 608,course,course | CS
+OR_CS 608_CS 645_CS 696,operator,operator | OR
+CS 708,course,course | CS
+IT 382,course,course | IT
+OR_AD 150_ARCH 334,operator,operator | OR
+ARCH 334,course,course | ARCH
+"AND_('|', 'AD 150', 'ARCH 334')_AD 111_AD 112_AD 161_AD 162_ARCH 251",operator,operator | AND
+IE 644,course,course | IE
+IE 706,course,course | IE
+AS 444,course,course | AS
+ACCT 640,course,course | ACCT
+R120 141,course,course | R120
+AND_R120 141_R120 142,operator,operator | AND
+R120 142,course,course | R120
+"OR_('&', 'R120 141', 'R120 142')_BIOL 340_R120 340",operator,operator | OR
+BIOL 424,course,course | BIOL
+EVSC 701C,course,course | EVSC
+CPT 325,course,course | CPT
+CPT 425,course,course | CPT
+IT 330,course,course | IT
+ENGR 311,course,course | ENGR
+CS 444,course,course | CS
+AND_FIN 218_MGMT 216,operator,operator | AND
+FIN 306,course,course | FIN
+TRAN 615,course,course | TRAN
+TRAN 653,course,course | TRAN
+HIST 361,course,course | HIST
+EM 701B,course,course | EM
+HIST 401,course,course | HIST
+COM 354,course,course | COM
+MATH 698,course,course | MATH
+STS 350,course,course | STS
+"AND_('|', 'MATH 222', 'MTH 222')_BME 111_BME 301_BME 302",operator,operator | AND
+BME 382,course,course | BME
+OR_CS 100_CS 106,operator,operator | OR
+"AND_('|', 'CS 100', 'CS 106')_IT 120",operator,operator | AND
+MIT 231,course,course | MIT
+ARCH 559,course,course | ARCH
+AND_CHE 612_CHE 624_CHE 626,operator,operator | AND
+CHE 709,course,course | CHE
+AND_AD 201_ID 216_ID 363,operator,operator | AND
+ID 363,course,course | ID
+COM 339,course,course | COM
+BIOL 605,course,course | BIOL
+BIOL 606,course,course | BIOL
+AND_ME 231_ME 315,operator,operator | AND
+AND_ID 364_PHYS 102,operator,operator | AND
+ID 464,course,course | ID
+M139,course,course | M139
+OR_M139_MALL_MATH 108_MTH 119_NJB45_NJB457,operator,operator | OR
+MALL,course,course | MALL
+NJB45,course,course | NJB45
+OR_ARCH 227_ARCH 309,operator,operator | OR
+MTEN 701B,course,course | MTEN
+CHE 603,course,course | CHE
+AND_CHE 603_CHE 624_CHE 626,operator,operator | AND
+CHE 710,course,course | CHE
+MTEN 792,course,course | MTEN
+OR_CS 656_IT 640,operator,operator | OR
+CS 648,course,course | CS
+PHYS 322,course,course | PHYS
+DS 701B,course,course | DS
+"AND_('|', 'MATH 112', 'MTH 122', 'R640 136')_('|', 'MATH 279', 'MATH 333', 'MTH 141')_('|', 'PHY 104', 'PHYS 121', 'R750 204')_BME 304",operator,operator | AND
+BME 385,course,course | BME
+SET 301,course,course | SET
+OR_PHYS 335_R750 315,operator,operator | OR
+R750 315,course,course | R750
+"AND_('|', 'PHYS 335', 'R750 315')_('|', 'PHYS 430')_('|', 'PHYS 432')",operator,operator | AND
+PHYS 450,course,course | PHYS
+PHIL 331,course,course | PHIL
+CPT 335,course,course | CPT
+CPT 435,course,course | CPT
+ACCT 116,course,course | ACCT
+OR_ACCT 116_ACCT 215,operator,operator | OR
+ACCT 425,course,course | ACCT
+AND_ARCH 382_DD 275_DD 363_IT 201,operator,operator | AND
+BNFO 700B,course,course | BNFO
+AND_ECON 201_GER200,operator,operator | AND
+STS 362,course,course | STS
+OR_ACCT 115_ACCT 117_IS 265_MGMT 390_MIS 245,operator,operator | OR
+EPS 701B,course,course | EPS
+AND_ID 216_ID 217_ID 264,operator,operator | AND
+COM 318,course,course | COM
+THTR 480,course,course | THTR
+IT 332,course,course | IT
+AND_MATH 213_MECH 234,operator,operator | AND
+OR_MECH 235_MECH 320,operator,operator | OR
+"AND_('|', 'MECH 235', 'MECH 320')_MECH 236",operator,operator | AND
+CE 501,course,course | CE
+"AND_('|', 'CHEM 124')_('|', 'CHEM 245')",operator,operator | AND
+CHEM 238,course,course | CHEM
+BIOL 443,course,course | BIOL
+PHIL 310,course,course | PHIL
+EVSC 340,course,course | EVSC
+PHYS 203,course,course | PHYS
+PHYS 203A,course,course | PHYS
+PHYS 747,course,course | PHYS
+"AND_('|', 'MATH 244', 'MATH 333', 'MTH 141')_('|', 'MATH 337', 'MTH 239', 'R640 337')",operator,operator | AND
+MATH 477,course,course | MATH
+CIS 631,course,course | CIS
+OR_CIS 631_CS 631,operator,operator | OR
+CS 731,course,course | CS
+THTR 310,course,course | THTR
+"OR_('&', 'AD 161', 'AD 162')_ARCH 295",operator,operator | OR
+CE 700B,course,course | CE
+COM 338,course,course | COM
+STS 360,course,course | STS
+PHEN 701B,course,course | PHEN
+OR_CHEM 235_CHEM 236,operator,operator | OR
+"AND_('|', 'CHEM 235', 'CHEM 236')_MATH 225",operator,operator | AND
+AND_CS 241_CS 280,operator,operator | AND
+CS 345,course,course | CS
+"AND_('|', 'CS 241', 'MATH 226', 'MTH 136')_CS 280",operator,operator | AND
+CS 341,course,course | CS
+PHYS 451,course,course | PHYS
+HIST 351,course,course | HIST

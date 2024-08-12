@@ -69,7 +69,7 @@ def parse_rule(rule, indent=0):
         course_stmt = f"{'  ' * indent}{course_str}\n"
         result += course_stmt
     elif rule['ruleType'] == 'Subset':
-        result += f"{'  ' * indent}SUBSET \"{rule['label']}\" ({rule['labelTag']}):\n"
+        result += f"{'  ' * indent}SUBSET \"{rule['label']}\" ({rule.get('labelTag')}):\n"
         result += parse_rule_array(rule['ruleArray'], indent+1)        
     elif rule['ruleType'] == 'Complete' or rule['ruleType'] == 'Incomplete':
         result += f"{'  ' * indent}{rule['ruleType'].upper()}: \"{rule['label']}\" ({rule['labelTag']})\n"
